@@ -11,9 +11,9 @@
       "Id": "fb87854012da4d0b94b99cb89774fb64",
       "Name": "Number of U-Panels",
       "Type": "number",
-      "Value": "22",
+      "Value": "17",
       "MaximumValue": 30.0,
-      "MinimumValue": 0.0,
+      "MinimumValue": 1.0,
       "StepValue": 1.0,
       "NumberType": "Integer",
       "Description": "A slider that produces integer values."
@@ -22,9 +22,9 @@
       "Id": "33b29928d46c4d7eb3bebe146bc588dc",
       "Name": "Number of V-Panels",
       "Type": "number",
-      "Value": "18",
+      "Value": "25",
       "MaximumValue": 30.0,
-      "MinimumValue": 0.0,
+      "MinimumValue": 1.0,
       "StepValue": 1.0,
       "NumberType": "Integer",
       "Description": "A slider that produces integer values."
@@ -35,21 +35,21 @@
       "Id": "1a9637ecfe844317b0b57349b7d3e4b6",
       "Name": "Total Area of Cut-Off Panels",
       "Type": "float",
-      "InitialValue": "7.15",
+      "InitialValue": "7.19",
       "Description": "Visualize the output of node."
     },
     {
       "Id": "6b1677b1ab67429aa805114c70aa7e57",
       "Name": "Number of Panels",
       "Type": "integer",
-      "InitialValue": "179",
+      "InitialValue": "192",
       "Description": "Visualize the output of node."
     },
     {
       "Id": "b62b3921bbab427a85e8b871618d2689",
       "Name": "Full Panel Area",
       "Type": "float",
-      "InitialValue": "0.43",
+      "InitialValue": "0.41",
       "Description": "Visualize the output of node."
     }
   ],
@@ -91,13 +91,13 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Rectangle.ByWidthLength (width: double = 1, length: double = 1): Rectangle"
+      "Description": "Create a Rectangle centered at the WCS origin in the WCS XY Plane, with specified width (X Axis length), and length (Y Axis length).\n\nRectangle.ByWidthLength (width: double = 1, length: double = 1): Rectangle"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.DoubleInput, CoreNodeModels",
       "NodeType": "NumberInputNode",
       "NumberType": "Double",
-      "InputValue": 60.0,
+      "InputValue": 9000.0,
       "Id": "2770a4d109c94c5e911d9816d1acc755",
       "Inputs": [],
       "Outputs": [
@@ -118,7 +118,7 @@
       "ConcreteType": "CoreNodeModels.Input.DoubleInput, CoreNodeModels",
       "NodeType": "NumberInputNode",
       "NumberType": "Double",
-      "InputValue": 35.0,
+      "InputValue": 6500.0,
       "Id": "c2dc7fa100d347a59857754e9262a557",
       "Inputs": [],
       "Outputs": [
@@ -163,7 +163,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Surface.ByPatch (closedCurve: Curve): Surface"
+      "Description": "Create a Surface by filling in the interior of a closed boundary defined by input Curves.\n\nSurface.ByPatch (closedCurve: Curve): Surface"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -268,7 +268,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Surface.Area: double"
+      "Description": "Returns the total surface area.\n\nSurface.Area: double"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -298,7 +298,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Surface.Area: double"
+      "Description": "Returns the total surface area.\n\nSurface.Area: double"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -348,7 +348,7 @@
         {
           "Id": "f077ab67f49c475db224a532cfd86f0c",
           "Name": "list",
-          "Description": "var[]..[]",
+          "Description": "List to get the item count of.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -358,8 +358,8 @@
       "Outputs": [
         {
           "Id": "cf9577f3f7934616bc88895e48182e05",
-          "Name": "int",
-          "Description": "int",
+          "Name": "count",
+          "Description": "List length.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -367,7 +367,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "List.Count (list: var[]..[]): int"
+      "Description": "Returns the number of items stored in the given list.\n\nList.Count (list: var[]..[]): int"
     },
     {
       "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
@@ -455,7 +455,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Polygon.ByPoints (points: Point[]): Polygon"
+      "Description": "Construct a Polygon Curve by connecting Points.\n\nPolygon.ByPoints (points: Point[]): Polygon"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -485,7 +485,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Polygon.ByPoints (points: Point[]): Polygon"
+      "Description": "Construct a Polygon Curve by connecting Points.\n\nPolygon.ByPoints (points: Point[]): Polygon"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -515,7 +515,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Surface.ByPatch (closedCurve: Curve): Surface"
+      "Description": "Create a Surface by filling in the interior of a closed boundary defined by input Curves.\n\nSurface.ByPatch (closedCurve: Curve): Surface"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -545,7 +545,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Surface.ByPatch (closedCurve: Curve): Surface"
+      "Description": "Create a Surface by filling in the interior of a closed boundary defined by input Curves.\n\nSurface.ByPatch (closedCurve: Curve): Surface"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.ColorPalette, CoreNodeModels",
@@ -713,7 +713,7 @@
         {
           "Id": "b5d2aadf0432412eb3b40929fe4d1a53",
           "Name": "list",
-          "Description": "var[]..[]",
+          "Description": "List to flatten.\n\nvar[]..[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -722,7 +722,7 @@
         {
           "Id": "098f493ab94940c4bff8d73f5621de75",
           "Name": "amt",
-          "Description": "int\nDefault value : -1",
+          "Description": "Layers of nesting to remove.\n\nint\nDefault value : -1",
           "UsingDefaultValue": true,
           "Level": 2,
           "UseLevels": false,
@@ -741,7 +741,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "List.Flatten (list: var[]..[], amt: int = -1): var[]..[]"
+      "Description": "Flattens a nested list of lists by a certain amount.\n\nList.Flatten (list: var[]..[], amt: int = -1): var[]..[]"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -782,7 +782,7 @@
         {
           "Id": "e96e5cb7483142349ce0d9588a324be9",
           "Name": "values",
-          "Description": "double[]",
+          "Description": "The numbers to sum\n\ndouble[]",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -792,8 +792,8 @@
       "Outputs": [
         {
           "Id": "427b081f740b4653838d3d7b48169950",
-          "Name": "double",
-          "Description": "double",
+          "Name": "sum",
+          "Description": "The sum of the values",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -801,7 +801,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Math.Sum (values: double[]): double"
+      "Description": "Find the sum of a series of numbers\n\nMath.Sum (values: double[]): double"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -812,7 +812,7 @@
         {
           "Id": "789230e30ca34911832623c8e030d140",
           "Name": "number",
-          "Description": "double",
+          "Description": "Number to be rounded.\n\ndouble",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -821,7 +821,7 @@
         {
           "Id": "e7969ddde7c54131adc3bb51096f1938",
           "Name": "digits",
-          "Description": "int",
+          "Description": "Number of fractional digits in the return value.\n\nint",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -831,8 +831,8 @@
       "Outputs": [
         {
           "Id": "e8ab02f73f0449a1b31e3d5e8179a056",
-          "Name": "double",
-          "Description": "double",
+          "Name": "number",
+          "Description": "The number nearest to value that contains a number of fractional digits equal to digits.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -840,7 +840,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Math.Round (number: double, digits: int): double"
+      "Description": "Rounds a number to a specified number of fractional digits.\n\nMath.Round (number: double, digits: int): double"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
@@ -963,7 +963,7 @@
         {
           "Id": "a487ae88424447d7a6d49d839e9d0cfd",
           "Name": "number",
-          "Description": "double",
+          "Description": "Number to be rounded.\n\ndouble",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -972,7 +972,7 @@
         {
           "Id": "d7ba8d100aff43ef82146b19e4b19515",
           "Name": "digits",
-          "Description": "int",
+          "Description": "Number of fractional digits in the return value.\n\nint",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -982,8 +982,8 @@
       "Outputs": [
         {
           "Id": "d1ab53825ae04fd59540bdd1f5179c88",
-          "Name": "double",
-          "Description": "double",
+          "Name": "number",
+          "Description": "The number nearest to value that contains a number of fractional digits equal to digits.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -991,7 +991,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "Math.Round (number: double, digits: int): double"
+      "Description": "Rounds a number to a specified number of fractional digits.\n\nMath.Round (number: double, digits: int): double"
     },
     {
       "ConcreteType": "CoreNodeModels.DynamoConvert, CoreNodeModels",
@@ -1058,9 +1058,9 @@
       "ConcreteType": "CoreNodeModels.Input.IntegerSlider, CoreNodeModels",
       "NodeType": "NumberInputNode",
       "NumberType": "Integer",
-      "InputValue": 22,
+      "InputValue": 17,
       "MaximumValue": 30,
-      "MinimumValue": 0,
+      "MinimumValue": 1,
       "StepValue": 1,
       "Id": "fb87854012da4d0b94b99cb89774fb64",
       "Inputs": [],
@@ -1082,9 +1082,9 @@
       "ConcreteType": "CoreNodeModels.Input.IntegerSlider, CoreNodeModels",
       "NodeType": "NumberInputNode",
       "NumberType": "Integer",
-      "InputValue": 18,
+      "InputValue": 25,
       "MaximumValue": 30,
-      "MinimumValue": 0,
+      "MinimumValue": 1,
       "StepValue": 1,
       "Id": "33b29928d46c4d7eb3bebe146bc588dc",
       "Inputs": [],
@@ -1197,7 +1197,7 @@
     {
       "Start": "fdfaf450eecd4fe1a9dad26cd03c2698",
       "End": "9a4b2fb691674064a70d31b465f5919b",
-      "Id": "b69277040b6d44fcb684a4767fd5bdd6"
+      "Id": "5ddf4f357d51493f85e8af8ee4e84dd0"
     },
     {
       "Start": "2b93602388af4447b8e2a2f9107c8cfb",
@@ -1280,7 +1280,7 @@
     {
       "NodeId": "04c0a8f7-cf25-4cb5-bc5d-1c994940da63",
       "Binding": {
-        "Remember_InClassDecl-1_InFunctionScope-1_Instance0_04c0a8f7-cf25-4cb5-bc5d-1c994940da63": "PFNPQVAtRU5WOkVudmVsb3BlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOlNPQVAtRU5DPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyIgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIiB4bWxuczpjbHI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vc29hcC9lbmNvZGluZy9jbHIvMS4wIiBTT0FQLUVOVjplbmNvZGluZ1N0eWxlPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyI+DQo8U09BUC1FTlY6Qm9keT4NCjxhMTpDYWxsU2l0ZV94MDAyQl9UcmFjZVNlcmlhbGlzZXJIZWxwZXIgaWQ9InJlZi0xIiB4bWxuczphMT0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9jbHIvbnNhc3NlbS9Qcm90b0NvcmUvUHJvdG9Db3JlJTJDJTIwVmVyc2lvbiUzRDIuMC4yLjY3NjYlMkMlMjBDdWx0dXJlJTNEbmV1dHJhbCUyQyUyMFB1YmxpY0tleVRva2VuJTNEbnVsbCI+DQo8TnVtYmVyT2ZFbGVtZW50cz4xPC9OdW1iZXJPZkVsZW1lbnRzPg0KPEJhc2UtMF9IYXNEYXRhPnRydWU8L0Jhc2UtMF9IYXNEYXRhPg0KPEJhc2UtMF9EYXRhIGlkPSJyZWYtMyI+UEZOUFFWQXRSVTVXT2tWdWRtVnNiM0JsSUhodGJHNXpPbmh6YVQwaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNUzlZVFV4VFkyaGxiV0V0YVc1emRHRnVZMlVpSUhodGJHNXpPbmh6WkQwaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNUzlZVFV4VFkyaGxiV0VpSUhodGJHNXpPbE5QUVZBdFJVNURQU0pvZEhSd09pOHZjMk5vWlcxaGN5NTRiV3h6YjJGd0xtOXlaeTl6YjJGd0wyVnVZMjlrYVc1bkx5SWdlRzFzYm5NNlUwOUJVQzFGVGxZOUltaDBkSEE2THk5elkyaGxiV0Z6TG5odGJITnZZWEF1YjNKbkwzTnZZWEF2Wlc1MlpXeHZjR1V2SWlCNGJXeHVjenBqYkhJOUltaDBkSEE2THk5elkyaGxiV0Z6TG0xcFkzSnZjMjltZEM1amIyMHZjMjloY0M5bGJtTnZaR2x1Wnk5amJISXZNUzR3SWlCVFQwRlFMVVZPVmpwbGJtTnZaR2x1WjFOMGVXeGxQU0pvZEhSd09pOHZjMk5vWlcxaGN5NTRiV3h6YjJGd0xtOXlaeTl6YjJGd0wyVnVZMjlrYVc1bkx5SStEUW84VTA5QlVDMUZUbFk2UW05a2VUNE5DanhoTVRwVFpYSnBZV3hwZW1GaWJHVlBZbXBsWTNSRGIyeHNaV04wYVc5dUlHbGtQU0p5WldZdE1TSWdlRzFzYm5NNllURTlJbWgwZEhBNkx5OXpZMmhsYldGekxtMXBZM0p2YzI5bWRDNWpiMjB2WTJ4eUwyNXpZWE56WlcwdlVtVm1hVzVsY25sR2RXNWpkR2x2Ym5NdlVtVm1hVzVsY25sR2RXNWpkR2x2Ym5NbE1rTWxNakJXWlhKemFXOXVKVE5FTVM0d0xqSXVNQ1V5UXlVeU1FTjFiSFIxY21VbE0wUnVaWFYwY21Gc0pUSkRKVEl3VUhWaWJHbGpTMlY1Vkc5clpXNGxNMFJ1ZFd4c0lqNE5Danh1ZFcxaVpYSlBaa1ZzWlcxbGJuUnpQakU4TDI1MWJXSmxjazltUld4bGJXVnVkSE0rRFFvOGIySnFaV04wVm1Gc2RXVXRNQ0JwWkQwaWNtVm1MVE1pSUhoemFUcDBlWEJsUFNKVFQwRlFMVVZPUXpwemRISnBibWNpUGxGVlRrcFZlVUpEWVZjMWFHTnViRWRoVjNoc2RrRkpRVUZCUVVGQlFVRkNRVUZCUVVGQlFVRkJRV05GVkVkc2FWSjNZMVJSVms1T1NVUkplVTE1TkhkTWFrVjFUVlJyZWsxRFFrOVdRV05aVmtoV2JFbEZjR2hpYVVGNFRsTkJlRTVVYjNkTmFtOHdUbmxCZVUxRVJUVkNaMEZCUVVGQlFWRkpPVUZDYnpOMGRHRkVNM2h5UVN0Q2NuVTVNVGx1Wm1aT2N6bEVVVkpwWWpKU05VUlFMeTh2THpoRkx5OHZMeTkzZWk4dkx5OHZSRUZGUVVGQlFVMHZMeTh2TDNkM1EwRkJRVUZGVVRCRllraFdkR05CZWk4dkx5OHZRbEF2THk4dk9FMHZMeTh2TDNkNkx5OHZMeTlFUVUxQlFVRkJUVUZCUVVGQlFrVk9RMWhTZVZsWE5YcGFiVGw1WWxGNkx5OHZMeTlDVUM4dkx5ODRWVUZCUVVGQlFVRkJPRVE0UVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlJrRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRTRSRGhCUVVGQlFVRkJRVUZCUWxGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFUaEVPRlZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVSm5RVUZCUVVGQlFWQkJMME4zYzB4RlVUQkdZekpvYkdKSGQwMHZMeTh2TDNkVUx5OHZMeTlFVUM4dkx5ODRUUzh2THk4dmQzb3ZMeTh2TDBSQlVVRkJRVUZOTHk4dkx5OTNkMEpCUVVGQlJWRXdSVnB0Um1wYVVYb3ZMeTh2TDBKUUx5OHZMemhOTHk4dkx5OTNlaTh2THk4dlJFRlZRVUZCUVUxQmQwRkJRVUY2THk4dkx5OUVRVmxCUVVGQlRFTm5jMUpFVVZKellqSTVkMFJRTHk4dkx6aEZMeTh2THk5M2VpOHZMeTh2UkVGalFVRkJRVTFEUVVGQlFVRjNSVUZCUVVGRlVUUkdZMGQ0YUdKdFZVNUNNMDR4WTIxYWFGa3lWVTB2THk4dkwzZFVMeTh2THk5RVVDOHZMeTg0VkVaeFNESlBMMlZEZVZWRVUzVnlNaXRCTWxwVmQwaEdTM1EzUmxjNU9FWkJSa0ZqTTJKRWFXZEpPVms0VW5WUGRGUmhTVkExZWl0RVFWUk5WbUo1TDIxUWVGUk9lazE2VFhwQmVIcFJRVUZCUVVGQlFVRkJRVUYzVUd0bFNUWnJRMWszTUV4RGQzTk1RM2hGVGtKSGVIWmlNMEZOTHk4dkx5OTNWQzh2THk4dlJGQXZMeTh2T0Uwdkx5OHZMM2QzU2tGQlFVRkVRVkZCUVVGQlVrUlJXbXBpTWxacldqSlZUUzh2THk4dmQxUXZMeTh2TDBSUUx5OHZMemhOUTJkQlFVRkJkMHhCUVVGQlJGQXZMeTh2T0UxRVFVRkJRVUZ6VFVKUlFVRkJRWG92THk4dkwwVlJNRWRaTWpsc1drZGtiRVJRTHk4dkx6aEZMeTh2THk5M2VpOHZMeTh2UkVFd1FVRkJRVTFFWjBGQlFVRjZMeTh2THk5RVFUaEJRVUZCVEVSQlkwRkJRVUZOTHk4dkx5OTRSVTVDYlU1MldsZFNibHBSZWk4dkx5OHZRbEF2THk4dk9FMHZMeTh2TDNkM1VVRkJRVUZFUVdkQlFVRkJUUzh2THk4dmQzZFNRVUZCUVVOM2QwWkJRVUZCUkZBdkx5OHZPRkpFVVZwcVlqSldhMW95VlUwdkx5OHZMM2RVTHk4dkx5OUVVQzh2THk4NFRVTkJRVUZCUVhkUlFVRkJRVVJRTHk4dkx6aE5SV2RCUVVGQmMwMUNVVUZCUVVGNkx5OHZMeTlGVVRCRldsZFNibHBSZWk4dkx5OHZRbEF2THk4dk9FMHZMeTh2TDNkM1ZFRkJRVUZDWjBGQlFVRkJRVUZCUVVGRVFsRkJRVUZCUjAxM1FsZG5RbFpuUkVWQlRVTkJRVUZCUVhkV1FVRkJRVU4zWTBoa1Z6VnlZbTA1TTJKb1JVNUNiVTUyV2xkU2JscFJlaTh2THk4dlFsQXZMeTh2T0Uwdkx5OHZMM2QzVjBGQlFVRkVRV3RCUVVGQlRTOHZMeTh2ZDNkWVFVRkJRVU4zZDBoQlFVRkJSRkF2THk4dk9GSkVVVnBxWWpKV2Exb3lWVTB2THk4dkwzZFVMeTh2THk5RVVDOHZMeTg0VFVOUlFVRkJRWGRYUVVGQlFVUlFMeTh2THpoTlIwRkJRVUZCYzAxQ2QwRkJRVUY2THk4dkx5OUZVVEJGV2xkU2JscFJlaTh2THk4dlFsQXZMeTh2T0Uwdkx5OHZMM2QzV2tGQlFVRkNaMEZCUVVGQlFVRkJRVUZFUW05QlFVRkJSM0UyVEdaTVUySXlURVZCVFVOUlFVRkJRWGRpUVVGQlFVTjNZMGhrVnpWeVltMDVNMkpvUlU1Q2JVNTJXbGRTYmxwUmVpOHZMeTh2UWxBdkx5OHZPRTB2THk4dkwzZDNURUZCUVVGRVFXOUJRVUZCVFM4dkx5OHZkM2RqUVVGQlFVTjNkMFpCUVVGQlJGQXZMeTh2T0ZKRVVWSnNXa2RrYkVSUUx5OHZMemhGTHk4dkx5OTNlaTh2THk4dlJFSlJRVUZCUVVjMGRpOHZMeTh2THpkNmQwMUlVVUZCUVVGWlNVczRRVXR6UVVsTVVVRjNTMEZCUVVGRVFqUkJRVUZCVEVKM1pERmliWFIxWWpOa2RVVlJNRVZhVjFKdVdsRjZMeTh2THk5Q1VDOHZMeTg0VFM4dkx5OHZkM2RtUVVGQlFVSm5RVUZCUVVGQlFWQkRPRVJDVFVGQlFVRkhLME55UVVOeVFVTkRNRUZOUTNkQlFVRkJkMmRCUVVGQlEzZGpTR1JYTlhKaWJUa3pZbWhGVGtKdVdteGpibEpzWlVGNkx5OHZMeTlDVUM4dkx5ODRUUzh2THk4dmQzZE5RVUZCUVVSRFJVRkJRVUZTUkZGYU1scFlTakJhV0dkTkx5OHZMeTkzVkM4dkx5OHZSRkF2THk4dk9FMUVRVUZCUVVGM2FVRkJRVUZGVVRSSll6TlNlVmxYYkc1aFNGRk9RbGRPTVdOdVdteEVVQzh2THk4NFJTOHZMeTh2ZDNvdkx5OHZMMFY2ZDFCMWExSTNhRGRTUVZSdWJWaDZhR3BzYVd0RFEzZEpRV1J2UVROQlVVSlNXRTlWZFVSM00zUldkbGRYU0ZCWVZWUmhiWEpCYlhGS09IQkJUakZoTUVGTFFtZEJRVUZCUVVGQlFVRkJRMmRaZWtGR1lVRkdWMEZOVVVKRlRrSnRUblphVjFKdVdsRjZMeTh2THk5Q1VDOHZMeTg0VFM4dkx5OHZkM2RQUVVGQlFVUkJNRUZCUVVGTkx5OHZMeTkzZDJwQlFVRkJRM2QzU0VGQlFVRkVVQzh2THk4NFVrUlJVbXhhUjJSc1JGQXZMeTh2T0VVdkx5OHZMM2Q2THk4dkx5OUVRbTlCUVVGQlIwRkJRVUZCUVVGQlFVRkJUVXBCUVVGQlFXRmhlaXRtZWl0bWVGQlJRWGRPUVVGQlFVUkRWVUZCUVVGTVFuZGtNV0p0ZEhWaU0yUjFSVkV3UlZwWFVtNWFVWG92THk4dkwwSlFMeTh2THpoTkx5OHZMeTkzZDIxQlFVRkJRbWR6UVVGQlFVRkJVRU00UkVKclFVRkJRVWR0Y3k5dU9DOXVPRlF3UVUxRVowRkJRVUYzYmtGQlFVRkRkMk5JWkZjMWNtSnRPVE5pYUVWT1FtNWFiR051VW14bFFYb3ZMeTh2TDBKUUx5OHZMemhOTHk4dkx5OTNkMUJCUVVGQlJFTm5RVUZCUVZKRVVWb3lXbGhLTUZwWVowMHZMeTh2TDNkVUx5OHZMeTlFVUM4dkx5ODRUVVIzUVVGQlFYZHdRVUZCUVVWUk5FbGpNMUo1V1Zkc2JtRklVVTVDVjA0eFkyNWFiRVJRTHk4dkx6aEZMeTh2THk5M2VpOHZMeTh2UlhoNWFEbHFkak5uYzJ4QlVqZDVPWFpuVG0xV1RVSjNVM0psZUZaMlprSlJRbE52TDFsNFMyTm5lRlpRVjJWSVVGaFZWR0Z0Y0VGdGNVbzRjRUZPTVdFNFFVdENaMEZCUVVGQlFVRkJRVUZEWjJGeWIzUTRkRXAyV1hOUlFrVk9Ra2RXYTFveVZVMHZMeTh2TDNkVUx5OHZMeTlFVUM4dkx5ODRUVWhSUVVGQlFXSkhUWEl4TWxwRGRqaFFRWGRtUVVGQlFVSnJWVUZXYjBGV1dVRjRRVVJDUVVGQlFVRk5TMmRCUVVGQmMwaENNMVoxWVRJMWRtUXlORkpFVVZveVdsaEtNRnBZWjAwdkx5OHZMM2RVTHk4dkx5OUVVQzh2THk4NFRVVlJRVUZCUVhkeVFVRkJRVVZSTkVsak0xSjVXVmRzYm1GSVVVNUNWMDR4WTI1YWJFUlFMeTh2THpoRkx5OHZMeTkzZWk4dkx5OHZSWHAzVUhWclVqZG9OMUpCYVU1TGRXTk1OMGhYTUVOWE4wWjRiMHhhVUVKUlFsUk9lazE2VFhwQmVIcDNUa3hpYlhCWkx6ZFhRVGxCUVVGQlFVRkJRVUZCUVV0Q2RVd3ZMeTh2THk4ck9EaERaMWxKU3poQlMzTkJTVXhSUWtWT1FtNWFiR051VW14bFFYb3ZMeTh2TDBKUUx5OHZMemhOTHk4dkx5OTNkMk5CUVVGQlJFTjNRVUZCUVZKRVoyaDZaRWhLYUdGWFpHOWtRVEJHV1ROV2VXUnRWVTB2THk4dkwzZFVMeTh2THk5RVVDOHZMeTg0Vkc4elZXZHhNa2REYzBWQ2RtVmFaazlIVDFkTFVVbEVRV2RDTW1kRVkwSkJSazB6VFhwTmVrMUVTRTVCTWpsMVlXeHFMM1JaVERCQlFVRkJRVUZCUVVGQlFXOUhRVUZCUVVGQlFVRTRUSGRMUW5abmNYZEJjWGRCWjNSQlJWRXdSbU5IT1hCaWJsRk5MeTh2THk5M1ZDOHZMeTh2UkZBdkx5OHZPRlJRUVNzMlVraDFTSFJGUWs5bFdtWlBSMDlYUzFGSlRFRm5RakpuUkdOQ1FVVlJNRVpqUnpsd1ltNVJUUzh2THk4dmQxUXZMeTh2TDBSUUx5OHZMemhVVDNjck5sSklkVWgwUlVSdU1HRTFkM1p6WkdKUlNtWnpXRWRuZEdzNFJrRkZVVEJGV2xkU2JscFJlaTh2THk4dlFsQXZMeTh2T0Uwdkx5OHZMM2QzYTBGQlFVRkNaMEZCUVVGQlFVRkJRVUZFUTFsQlFVRkJSM0UyVEdaTVUySXlURVZCVFVablFVRkJRWGQwUVVGQlFVTjNZMGhrVnpWeVltMDVNMkpvUlU1Q2JscHNZMjVTYkdWQmVpOHZMeTh2UWxBdkx5OHZPRTB2THk4dkwzZDNXRUZCUVVGRVF6UkJRVUZCVWtSbmFIcGtTRXBvWVZka2IyUkJNRVpaTTFaNVpHMVZUUzh2THk4dmQxUXZMeTh2TDBSUUx5OHZMemhVU0hGSU1rOHZaVU41VlVOelJWRnlhWG93VTI1UlR6bHpWRFpVYUdkaVpFRkdUVE5OZWsxNlRVUklVRUZEWkM5QmQxaFhVbGxVTUVGQlFVRkJRVUZCUVVGQmIwZEJRVUZCUVVGQlFVRkJRVXRDY0hKUU5TOVFOUzlGT1VGRlVUQkhaRzFXZVdSSFZqUkVVQzh2THk4NFJTOHZMeTh2ZDNvdkx5OHZMMFJEVFVGQlFVRk5USGRCUVVGQ1JVOURTRTR3WTIxR2NGb3lhREJFVVZacVpGaEtNbHBSZWk4dkx5OHZRbEF2THk4dk9FMHZMeTh2TDNoUE9YWlNTMGxGVTJFMWQxQkxlblppTkVSYWJGUkJZMVZ4TTNOV1lqTjNWVUZWZW1ONlRYcE5kMDFqTUVGS016aEVRbVJhUm1oMlVVRkJRVUZCUVVGQlFVRkRaMWxNUVVGQlFVRkJSSGQyUVc5SGJYTXZiamd2YmpoVU1FRlNSRkZXZDJJeWJIVmtRWG92THk4dkwwSlFMeTh2THpoTkx5OHZMeTk0VFdOdlpsazNPVFJNU2xGRlpUaDJZalJFV214VVFXTkZjVE56Vm1JemQxVkJVa1JSVm5kaU1teDFaRUY2THk4dkx5OUNVQzh2THk4NFRTOHZMeTh2ZUUxbGIyWlpOemswVEVwUlMzZFNRM1ZNVUZKTFpFRTNNbmhRY0U5SFFuUXdRVkpFWjJoNlpFaEthR0ZYWkc5a1FUQkdXVE5XZVdSdFZVMHZMeTh2TDNkVUx5OHZMeTlFVUM4dkx5ODRWRzlZVldkeE1rZERjMFZEU1RCeE5YZDJjMlJpVVVwbWMxaEhaM1JyT0VaQlJrVm5OVk0wVUVSbE1WVTVXVzlqT1dSU1RuRmhhME5rYjI1NWEwRXpWbkozUVc5SGVHcExPV1J0VVhJdlJIZExRbXRWUVZadlFWWlpRWGhCUlZFd1JtTkhPWEJpYmxGTkx5OHZMeTkzVkM4dkx5OHZSRkF2THk4dk9GUnZXRlZuY1RKSFEzTkZSRGN3Y1RWM2RuTmtZbEZLWW5OWVIyZDBhemhHUVVWUk1FWmpSemx3WW01UlRTOHZMeTh2ZDFRdkx5OHZMMFJRTHk4dkx6aFViMjVWWjNFeVIwTnpSVUoyWlZwbVQwZFBWMHRSU1VSQlowSXlaMFJqUWtGRlVUUkpZek5TZVZsWGJHNWhTRkZPUWxkT01XTnVXbXhFVUM4dkx5ODRSUzh2THk4dmQzb3ZMeTh2TDBVM2FUbEZiMmRTU25KdVFUaG9SVXMwY3psRmNEQkVkbUpGSzJzMFdVY3pVVUpSVTFCVVJHUnFhemxoZGxkbFNGQllWVlJoYlhKQmJYRktPSEJCVGpGaE1FRkxRbWRCUVVGQlFVRkJRVUZCUTJkaGNtOTBPSFJLZGxselVVSkZUa0pZUW5aaFZ6VXdSRkF2THk4dk9FVXZMeTh2TDNkNkx5OHZMeTlGTjJrNVJXOW5Va3B5YmtFNGFFVkxOSE01UlhBd1JIWmlSU3RyTkZsSE0xRkNSVTVDV0VKMllWYzFNRVJRTHk4dkx6aEZMeTh2THk5M2VpOHZMeTh2UlRjMk9VVnZaMUpLY201QloweFBPWFpuVG0xV1RVSjNVM0psZUZaMlprSlJRa1ZQUVRCV2RWcEJORU5pTWxsUFFrVkdSRk5XVFU1Q1IxSm9aRWRGUFR3dmIySnFaV04wVm1Gc2RXVXRNRDROQ2p3dllURTZVMlZ5YVdGc2FYcGhZbXhsVDJKcVpXTjBRMjlzYkdWamRHbHZiajROQ2p3dlUwOUJVQzFGVGxZNlFtOWtlVDROQ2p3dlUwOUJVQzFGVGxZNlJXNTJaV3h2Y0dVK0RRbz08L0Jhc2UtMF9EYXRhPg0KPEJhc2UtMF9IYXNOZXN0ZWREYXRhPmZhbHNlPC9CYXNlLTBfSGFzTmVzdGVkRGF0YT4NCjwvYTE6Q2FsbFNpdGVfeDAwMkJfVHJhY2VTZXJpYWxpc2VySGVscGVyPg0KPC9TT0FQLUVOVjpCb2R5Pg0KPC9TT0FQLUVOVjpFbnZlbG9wZT4NCg=="
+        "Remember_InClassDecl-1_InFunctionScope-1_Instance0_04c0a8f7-cf25-4cb5-bc5d-1c994940da63": "PFNPQVAtRU5WOkVudmVsb3BlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOlNPQVAtRU5DPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyIgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIiB4bWxuczpjbHI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vc29hcC9lbmNvZGluZy9jbHIvMS4wIiBTT0FQLUVOVjplbmNvZGluZ1N0eWxlPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyI+DQo8U09BUC1FTlY6Qm9keT4NCjxhMTpDYWxsU2l0ZV94MDAyQl9UcmFjZVNlcmlhbGlzZXJIZWxwZXIgaWQ9InJlZi0xIiB4bWxuczphMT0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9jbHIvbnNhc3NlbS9Qcm90b0NvcmUvUHJvdG9Db3JlJTJDJTIwVmVyc2lvbiUzRDIuMC4yLjY4MjYlMkMlMjBDdWx0dXJlJTNEbmV1dHJhbCUyQyUyMFB1YmxpY0tleVRva2VuJTNEbnVsbCI+DQo8TnVtYmVyT2ZFbGVtZW50cz4xPC9OdW1iZXJPZkVsZW1lbnRzPg0KPEJhc2UtMF9IYXNEYXRhPnRydWU8L0Jhc2UtMF9IYXNEYXRhPg0KPEJhc2UtMF9EYXRhIGlkPSJyZWYtMyI+UEZOUFFWQXRSVTVXT2tWdWRtVnNiM0JsSUhodGJHNXpPbmh6YVQwaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNUzlZVFV4VFkyaGxiV0V0YVc1emRHRnVZMlVpSUhodGJHNXpPbmh6WkQwaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNUzlZVFV4VFkyaGxiV0VpSUhodGJHNXpPbE5QUVZBdFJVNURQU0pvZEhSd09pOHZjMk5vWlcxaGN5NTRiV3h6YjJGd0xtOXlaeTl6YjJGd0wyVnVZMjlrYVc1bkx5SWdlRzFzYm5NNlUwOUJVQzFGVGxZOUltaDBkSEE2THk5elkyaGxiV0Z6TG5odGJITnZZWEF1YjNKbkwzTnZZWEF2Wlc1MlpXeHZjR1V2SWlCNGJXeHVjenBqYkhJOUltaDBkSEE2THk5elkyaGxiV0Z6TG0xcFkzSnZjMjltZEM1amIyMHZjMjloY0M5bGJtTnZaR2x1Wnk5amJISXZNUzR3SWlCVFQwRlFMVVZPVmpwbGJtTnZaR2x1WjFOMGVXeGxQU0pvZEhSd09pOHZjMk5vWlcxaGN5NTRiV3h6YjJGd0xtOXlaeTl6YjJGd0wyVnVZMjlrYVc1bkx5SStEUW84VTA5QlVDMUZUbFk2UW05a2VUNE5DanhoTVRwVFpYSnBZV3hwZW1GaWJHVlBZbXBsWTNSRGIyeHNaV04wYVc5dUlHbGtQU0p5WldZdE1TSWdlRzFzYm5NNllURTlJbWgwZEhBNkx5OXpZMmhsYldGekxtMXBZM0p2YzI5bWRDNWpiMjB2WTJ4eUwyNXpZWE56WlcwdlVtVm1hVzVsY25sR2RXNWpkR2x2Ym5NdlVtVm1hVzVsY25sR2RXNWpkR2x2Ym5NbE1rTWxNakJXWlhKemFXOXVKVE5FTVM0d0xqSXVNQ1V5UXlVeU1FTjFiSFIxY21VbE0wUnVaWFYwY21Gc0pUSkRKVEl3VUhWaWJHbGpTMlY1Vkc5clpXNGxNMFJ1ZFd4c0lqNE5Danh1ZFcxaVpYSlBaa1ZzWlcxbGJuUnpQakU4TDI1MWJXSmxjazltUld4bGJXVnVkSE0rRFFvOGIySnFaV04wVm1Gc2RXVXRNQ0JwWkQwaWNtVm1MVE1pSUhoemFUcDBlWEJsUFNKVFQwRlFMVVZPUXpwemRISnBibWNpUGxGVlRrcFZlVUpEWVZjMWFHTnViRWRoVjNoc2RrRkpRVUZCUVVGQlFVRkNRVUZCUVVGQlFVRkJRV05GVkVkc2FWSjNZMVZSVms1T1NVUkplVTVETkRCTWFrRjFUbXBWTVUxNlZXZFViRkZJUjBaU2IyUlRRa2RhVjBsblRXcEZaMDFVUVRaTlZGVTJUbFJqWjAxcVFYaFBVVmxCUVVGQlFVRkZRMUJSUVdGT04ySlhaems0WVhkUVoyRTNkbVJtV2pNemVtSlFVVEJGV1cwNWEyVlJlaTh2THk4dlFsQXZMeTh2T0Uwdkx5OHZMM2QzUWtGQlFVRkVVQzh2THk4NFRVRm5RVUZCUWtWT1FrZDRNV0pZUVUwdkx5OHZMM2RVTHk4dkx5OUVVQzh2THk4NFRTOHZMeTh2ZDNkRVFVRkJRVVJCUVVGQlFVRlNSRkZzTUdOdFJuVmpNbHAyWTIwd1RTOHZMeTh2ZDFRdkx5OHZMMFpCUVVGQlFVRkJRVkJCTDBGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVSlJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJVRUV2UVVGQlFVRkJRVUZCUVVGVlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRlFRUzlHUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJRVUZCUVVGQlFVRkJXVUZCUVVGQlFVRkVkMUIzYzB4RGVFVk9RbGhPYjFwWGVITkVVQzh2THk4NFJTOHZMeTh2ZDNvdkx5OHZMMFJRTHk4dkx6aE5MeTh2THk5M2QwVkJRVUZCUkZBdkx5OHZPRTFCVVVGQlFVSkZUa0pIV21oWk1sVk5MeTh2THk5M1ZDOHZMeTh2UkZBdkx5OHZPRTB2THk4dkwzZDNSa0ZCUVVGRVFVMUJRVUZCVFM4dkx5OHZkM2RIUVVGQlFVTjNiMHhGVVRCRllrYzVkbU5CZWk4dkx5OHZRbEF2THk4dk9FMHZMeTh2TDNkM1NFRkJRVUZFUVdkQlFVRkJUVUpCUVVGQlFrVlBRbGhDYzFsWE5XeEVVV1I2WkZoS2JWbFhUbXhFVUM4dkx5ODRSUzh2THk4dmQzb3ZMeTh2TDBWNFlXZzVhbll6WjNOc1FUQnljVGwyWjA1dFZrMUNlRk55WlhoV2RtWkNVVUpSU0U0eWR6UnZRMUJYVUVWaWFuSlZNbWxFSzJNdlozZEZla1pYT0hZMWFqaFZlbU42VFhwTmQwMWpNRUZCUVVGQlFVRkJRVUZCVFVRMVNHbFBjRUZ0VHpsRGQzTk1RM2R6VWtSUlVuTmlNamwzUkZBdkx5OHZPRVV2THk4dkwzZDZMeTh2THk5RVVDOHZMeTg0VFVOUlFVRkJRWGRGUVVGQlFVVlJNRWRaTWpsc1drZGtiRVJRTHk4dkx6aEZMeTh2THk5M2VpOHZMeTh2UkVGdlFVRkJRVTFEZDBGQlFVRjZMeTh2THk5RVFYZEJRVUZCVEVSQlZVRkJRVUZOTHk4dkx5OTRSVTVDYlU1MldsZFNibHBSZWk4dkx5OHZRbEF2THk4dk9FMHZMeTh2TDNkM1RrRkJRVUZFUVRSQlFVRkJUUzh2THk4dmQzZFFRVUZCUVVOM2QwaEJRVUZCUkZBdkx5OHZPRkpFVVZwcVlqSldhMW95VlUwdkx5OHZMM2RVTHk4dkx5OUVVQzh2THk4NFRVVkJRVUZCUVhkSlFVRkJRVVJRTHk4dkx6aE5SVkZCUVVGQmMwMUNVVUZCUVVGNkx5OHZMeTlGVVRCSFdUSTViRnBIWkd4RVVDOHZMeTg0UlM4dkx5OHZkM292THk4dkwwUkJaMEZCUVVGTlJVRkJRVUZCZWk4dkx5OHZSRUpKUVVGQlFVeEVRVlZCUVVGQlRTOHZMeTh2ZUVWT1FrZFdhMW95VlUwdkx5OHZMM2RVTHk4dkx5OUVVQzh2THk4NFRVVjNRVUZCUVZsQlFVRkJRVUZCUVVGQlFYZFZRVUZCUVVKcVRVRldiMEZXV1VGNFFVUkJaMEZCUVVGTlJsRkJRVUZCYzBoQ00xWjFZVEkxZG1ReU5GSkVVVnBxWWpKV2Exb3lWVTB2THk4dkwzZFVMeTh2THk5RVVDOHZMeTg0VFVablFVRkJRWGRLUVVGQlFVUlFMeTh2THpoTlJuZEJRVUZCYzAxQ2QwRkJRVUY2THk4dkx5OUZVVEJIV1RJNWJGcEhaR3hFVUM4dkx5ODRSUzh2THk4dmQzb3ZMeTh2TDBSQmEwRkJRVUZOUm1kQlFVRkJlaTh2THk4dlJFSm5RVUZCUVV4RVFXTkJRVUZCVFM4dkx5OHZlRVZPUWtkV2Exb3lWVTB2THk4dkwzZFVMeTh2THk5RVVDOHZMeTg0VFVkUlFVRkJRVmxCUVVGQlFVRkJRVUZCUVhkaFFVRkJRVUp4ZFdremVUQnRPV2w0UVVSQmEwRkJRVUZOUjNkQlFVRkJjMGhDTTFaMVlUSTFkbVF5TkZKRVVWcHFZakpXYTFveVZVMHZMeTh2TDNkVUx5OHZMeTlFVUM4dkx5ODRUVU4zUVVGQlFYZExRVUZCUVVSUUx5OHZMemhOU0VGQlFVRkJjMDFDVVVGQlFVRjZMeTh2THk5RlVUQkZXbGRTYmxwUmVpOHZMeTh2UWxBdkx5OHZPRTB2THk4dkwzZDNWVUZCUVVGQ2RVd3ZMeTh2THk4ck9EaEVRakJCUVVGQlIwTkRka0ZEY2tGRFF6QkJUVU5uUVVGQlFYZGxRVUZCUVVOM1kwaGtWelZ5WW0wNU0ySm9SVTVDUjFacldqSlZUUzh2THk4dmQxUXZMeTh2TDBSUUx5OHZMemhOU0hkQlFVRkJXVUZCUVVGQlFVRkVkM1pCZDFSQlFVRkJRblpuY1hkQmNYZEJaM1JCUkVGelFVRkJRVTFKUVVGQlFVRnpTRUl6Vm5WaE1qVjJaREkwVWtSUldqSmFXRW93V2xoblRTOHZMeTh2ZDFRdkx5OHZMMFJRTHk4dkx6aE5SRUZCUVVGQmQyaEJRVUZCUlZFd1IyUnRWbmxrUjFZMFJGQXZMeTh2T0VVdkx5OHZMM2Q2THk4dkx5OUVRWGRCUVVGQlRVbG5RVUZCUWtWUFEwaE9NR050Um5CYU1tZ3dSRkZXYW1SWVNqSmFVWG92THk4dkwwSlFMeTh2THpoTkx5OHZMeTk0VFRoRU4zQkZaVFJsTUZGRk5UVnNPRFJaTlZsd1FXZHpRMEZJWVVGT2QwVkJWVlo2YkV4bk9FNDNWbUl4YkdoNk1URkZNbkJ4ZDBweGFXWkxVVVJrVjNSQlEyZFpRVUZCUVVGQlFVRkJRVUZ2UjAxM1FsZG5RbFpuUkVWQlVrUlJXbXBpTWxacldqSlZUUzh2THk4dmQxUXZMeTh2TDBSUUx5OHZMemhOUkdkQlFVRkJkMDVCUVVGQlJGQXZMeTh2T0UxSmQwRkJRVUZ6VFVKM1FVRkJRWG92THk4dkwwVlJNRVZhVjFKdVdsRjZMeTh2THk5Q1VDOHZMeTg0VFM4dkx5OHZkM2RoUVVGQlFVSm5RVUZCUVVGQlFVRkJRVVJEVVVGQlFVRkhiWE12YmpndmJqaFVNRUZOUkZGQlFVRkJkMnhCUVVGQlEzZGpTR1JYTlhKaWJUa3pZbWhGVGtKSFZtdGFNbFZOTHk4dkx5OTNWQzh2THk4dlJGQXZMeTh2T0UxS1owRkJRVUZaVEVGQlFVRkJRVVIzZGtGM1drRkJRVUZDY0hKUU5TOVFOUzlGT1VGRVFUUkJRVUZCVFVwM1FVRkJRWE5JUWpOV2RXRXlOWFprTWpSU1JGRmFNbHBZU2pCYVdHZE5MeTh2THk5M1ZDOHZMeTh2UkZBdkx5OHZPRTFFZDBGQlFVRjNiMEZCUVVGRlVUQkhaRzFXZVdSSFZqUkVVQzh2THk4NFJTOHZMeTh2ZDNvdkx5OHZMMFJCT0VGQlFVRk5TMUZCUVVGQ1JVOURTRTR3WTIxR2NGb3lhREJFVVZacVpGaEtNbHBSZWk4dkx5OHZRbEF2THk4dk9FMHZMeTh2TDNoTlkyOW1XVGM1TkV4S1VVVmxPSFppTkVSYWJGUkJZMFZ4TTNOV1lqTjNWVUZWY1ZBeVRWTnVTVTFXVkRGdWFIb3hNVVV5Y0hGUlNuRnBaa3RSUkdSWGRrRkRaMWxCUVVGQlFVRkJRVUZCUVc5SGNUWk1aa3hUWWpKTVJVRlNSRkZTYkZwSFpHeEVVQzh2THk4NFJTOHZMeTh2ZDNvdkx5OHZMMFJDTUVGQlFVRkhlR3BMT1dSdFVYSXZSSGROU0hkQlFVRkJXa1pCUm1GQlJsZEJUVkZCZDFGQlFVRkJSRU52UVVGQlFVeENkMlF4WW0xMGRXSXpaSFZGVVRCSFpHMVdlV1JIVmpSRVVDOHZMeTg0UlM4dkx5OHZkM292THk4dkwwUkNSVUZCUVVGTlMzZEJRVUZDUlU5RFNFNHdZMjFHY0ZveWFEQkVVVlpxWkZoS01scFJlaTh2THk4dlFsQXZMeTh2T0Uwdkx5OHZMM2hOT0VRM2NFVmxOR1V3VVVscVUzSnVReXQ0TVhSQmJIVjRZMkZETWxSM1ZVRlZlbU42VFhwTmQwMWpPRVJUTWpWeFYxQXJNV2RRVVVGQlFVRkJRVUZCUVVGRFoySnBMeTh2THk4dkwzWlFRVzlIUTBOMlFVTnlRVU5ETUVGU1JGRmFNbHBZU2pCYVdHZE5MeTh2THk5M1ZDOHZMeTh2UkZBdkx5OHZPRTFJUVVGQlFVRjNjMEZCUVVGRlVUUkpZek5TZVZsWGJHNWhTRkZPUWxkT01XTnVXbXhFVUM4dkx5ODRSUzh2THk4dmQzb3ZMeTh2TDBVMlRqRkpTM1JvWjNKQ1FXSXpiVmg2YUdwc2FXdERRWGRKUVdSdlFUTkJVVUpVVG5wTmVrMTZRWGg2VVU1MlltMXdXUzgzVjBNNVFVRkJRVUZCUVVGQlFVRkxRbWRCUVVGQlFVRkJVRU00UTJkaU5FdHpRVXR6UVVsTVVVSkZUa0pZUW5aaFZ6VXdSRkF2THk4dk9FVXZMeTh2TDNkNkx5OHZMeTlGZW5kUWRXdFNOMmczVWtGVWJtMVllbWhxYkdsclEwTjNTVUZrYjBFelFWRkNSVTVDV0VKMllWYzFNRVJRTHk4dkx6aEZMeTh2THk5M2VpOHZMeTh2UlhwelVIVnJVamRvTjFKQk5UbEhkV05NTjBoWE1FTllOMFo0YjB4YVVFSlJRa1ZPUWtkV2Exb3lWVTB2THk4dkwzZFVMeTh2THk5RVVDOHZMeTg0VFVwQlFVRkJRVmxCUVVGQlFVRkJRVUZCUVhkdFFVRkJRVUp4ZFdremVUQnRPV2w0UVVSQ1dVRkJRVUZOVEZGQlFVRkJjMGhDTTFaMVlUSTFkbVF5TkZKRVVWb3lXbGhLTUZwWVowMHZMeTh2TDNkVUx5OHZMeTlFVUM4dkx5ODRUVVozUVVGQlFYZDFRVUZCUVVWUk5FbGpNMUo1V1Zkc2JtRklVVTVDVjA0eFkyNWFiRVJRTHk4dkx6aEZMeTh2THk5M2VpOHZMeTh2UlhnMmFEbHFkak5uYzJ4QmNrSkZTelJ6T1VWd01FUjJZa1VyYXpSWlJ6TlJRbFJPZWsxNlRYcEJlSHAzUVc1bWQwMUdNV3RYUlRsQlFVRkJRVUZCUVVGQlFVdENaMEZCUVVGQlFVRkJRVUZEWjJGaGVpdG1laXRtZUZCUlFrVk9RbTVhYkdOdVVteGxRWG92THk4dkwwSlFMeTh2THpoTkx5OHZMeTkzZDJwQlFVRkJSRU00UVVGQlFWSkVaMmg2WkVoS2FHRlhaRzlrUVRCR1dUTldlV1J0VlUwdkx5OHZMM2RVTHk4dkx5OUVVQzh2THk4NFZIWmlNRk5wUWtWdGRXTkVlWE0zTWl0Qk1scFZkMGhHUzNRM1JsYzVPRVpCUmswelRYcE5lazFFU0U1QlEyUXZRWGRZVjFKWllqQkJRVUZCUVVGQlFVRkJRVzlIUTNkQlFVRkJRVUU0VEhkTFFuQnlVRFV2VURVdlJUbEJSVkV3Um1OSE9YQmlibEZOTHk4dkx5OTNWQzh2THk4dlJGQXZMeTh2T0ZSSVMwZ3lUeTlsUTNsVlFraDJURElyUVRKYVZYZElRa3QwTjBaWE9UaEdRVVZSTUVaalJ6bHdZbTVSVFM4dkx5OHZkMVF2THk4dkwwUlFMeTh2THpoVVNIRklNazh2WlVONVZVTnpSVkZ5YVhvd1UyNVJUemx6VkRaVWFHZGlaRUZGVVRSSll6TlNlVmxYYkc1aFNGRk9RbGRPTVdOdVdteEVVQzh2THk4NFJTOHZMeTh2ZDNvdkx5OHZMMFUyUmpGSlMzUm9aM0pDUVdsT1MzVmpURGRJVnpCRFdEZEdlRzlNV2xCQ1VVSlNTVTlWZFVSM00zUldVRmRMU0ZCWVZWUmhiWEJCYm1GS09IQkJUakZoT0VGTFFuTlplWFpZV210TEwzYzRRMmRhUmtGR1lVRkdWMEZOVVVKRlRrSllRblpoVnpVd1JGQXZMeTh2T0VVdkx5OHZMM2Q2THk4dkx5OUZOa1l4U1V0MGFHZHlRa0VyT1V0MVkwdzNTRmN3UTFjM1JuaHZURnBRUWxGQ1JVNUNXRUoyWVZjMU1FUlFMeTh2THpoRkx5OHZMeTkzZWk4dkx5OHZSVFpLTVVsTGRHaG5ja0pCWWpOdFdIcG9hbXhwYTBOQmQwbEJaRzlCTTBGUlFrVlBRMGhPTUdOdFJuQmFNbWd3UkZGV2FtUllTakphVVhvdkx5OHZMMEpRTHk4dkx6aE5MeTh2THk5NFR6UjJVa3RKUlZOaE5YZFFTVkpEZFV4UVVrdGtRVGN5ZUZCd1QwZENkREJCVlVWcU1IY3pXVFZRVjNJeGJtaDZNVEZGTW5CeGQwcHhhV1pMVVVSa1YzUkJRMmRaUVVGQlFVRkJRVUZCUVVGdlIzRTJUR1pNVTJJeVRFVkJVa1JSVm5kaU1teDFaRUY2THk4dkx5OUNVQzh2THk4NFRTOHZMeTh2ZUU4MGRsSkxTVVZUWVRWM1VFbFNRM1ZNVUZKTFpFRTNNbmhRY0U5SFFuUXdRVkpFVVZaM1lqSnNkV1JCZWk4dkx5OHZRbEF2THk4dk9FMHZMeTh2TDNoUEszWlNTMGxGVTJFMWQwbERlblppTkVSYWJGUkJZMFZ4TTNOV1lqTjNWVUZTUkdkT1JtSnRVVTlCYlRsdFJHZFNRbEV3YkZSRVVWSnJXVmhTYUR3dmIySnFaV04wVm1Gc2RXVXRNRDROQ2p3dllURTZVMlZ5YVdGc2FYcGhZbXhsVDJKcVpXTjBRMjlzYkdWamRHbHZiajROQ2p3dlUwOUJVQzFGVGxZNlFtOWtlVDROQ2p3dlUwOUJVQzFGVGxZNlJXNTJaV3h2Y0dVK0RRbz08L0Jhc2UtMF9EYXRhPg0KPEJhc2UtMF9IYXNOZXN0ZWREYXRhPmZhbHNlPC9CYXNlLTBfSGFzTmVzdGVkRGF0YT4NCjwvYTE6Q2FsbFNpdGVfeDAwMkJfVHJhY2VTZXJpYWxpc2VySGVscGVyPg0KPC9TT0FQLUVOVjpCb2R5Pg0KPC9TT0FQLUVOVjpFbnZlbG9wZT4NCg=="
       }
     }
   ],
@@ -1289,358 +1289,358 @@
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.2.6766",
+      "Version": "2.0.2.6826",
       "RunType": "Automatic",
       "RunPeriod": "1000"
     },
     "Camera": {
       "Name": "Background Preview",
-      "EyeX": 7521.7508820951043,
-      "EyeY": 15576.209577115431,
-      "EyeZ": -13893.384168766665,
-      "LookX": -4209.8192414701043,
-      "LookY": -10976.870709927931,
-      "LookZ": 12444.97816290729,
-      "UpX": -0.14796144983062012,
-      "UpY": 0.88701083317824614,
-      "UpZ": 0.43740049289924171
+      "EyeX": 11256.30779222634,
+      "EyeY": 8727.3850537686449,
+      "EyeZ": -22829.356604727622,
+      "LookX": -5308.0741358927371,
+      "LookY": -7151.5019063323516,
+      "LookZ": 24572.887804607395,
+      "UpX": -0.01288999871015041,
+      "UpY": 0.99813479842189434,
+      "UpZ": 0.059672205528119339
     },
     "NodeViews": [
       {
+        "ShowGeometry": true,
+        "Name": "Rectangle.ByWidthLength",
         "Id": "5f521e327674499a9364ab92dcf13578",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Rectangle.ByWidthLength",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": -456.47811233122,
         "Y": 4.8032284632014779
       },
       {
+        "ShowGeometry": true,
+        "Name": "Number",
         "Id": "2770a4d109c94c5e911d9816d1acc755",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Number",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": -621.413126913716,
         "Y": -24.196771536798508
       },
       {
+        "ShowGeometry": true,
+        "Name": "Number",
         "Id": "c2dc7fa100d347a59857754e9262a557",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Number",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": -621.413126913716,
         "Y": 59.803228463201492
       },
       {
+        "ShowGeometry": false,
+        "Name": "Surface.ByPatch",
         "Id": "02fac6f6f6bf461693fd0a3cb706109a",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Surface.ByPatch",
-        "ShowGeometry": false,
         "Excluded": false,
         "X": -137.11642735125702,
         "Y": 4.8032284632014779
       },
       {
+        "ShowGeometry": false,
+        "Name": "Panel.PanelDiamond",
         "Id": "6f5fa2f79e094024b33508db5b5bdde9",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Panel.PanelDiamond",
-        "ShowGeometry": false,
         "Excluded": false,
         "X": 958.52310161110438,
         "Y": 432.664206686176
       },
       {
+        "ShowGeometry": true,
+        "Name": "Surface.Area",
         "Id": "c18cf3449de7419d829778014f68cbec",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Surface.Area",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1258.1750030987014,
         "Y": 432.664206686176
       },
       {
+        "ShowGeometry": true,
+        "Name": "Surface.Area",
         "Id": "831dbb5f7014410cb65b08b372a8d38a",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Surface.Area",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1551.0678406240513,
         "Y": 196.230556194763
       },
       {
+        "ShowGeometry": true,
+        "Name": "-",
         "Id": "703abfc89a544b0f8afd72399503369c",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "-",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1906.9882224396615,
         "Y": 299.092242752487
       },
       {
+        "ShowGeometry": true,
+        "Name": "List.Count",
         "Id": "d355dd6bff314a76a4ae655c81785a79",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "List.Count",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 2317.1567096207082,
-        "Y": 682.78157476071237
+        "Y": 640.75123348611612
       },
       {
+        "ShowGeometry": true,
+        "Name": "Total Area of Cut-Off Panels",
         "Id": "1a9637ecfe844317b0b57349b7d3e4b6",
         "IsSetAsInput": false,
         "IsSetAsOutput": true,
-        "Name": "Total Area of Cut-Off Panels",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 3831.6814620959558,
         "Y": 299.26981733496973
       },
       {
+        "ShowGeometry": true,
+        "Name": "Number of Panels",
         "Id": "6b1677b1ab67429aa805114c70aa7e57",
         "IsSetAsInput": false,
         "IsSetAsOutput": true,
-        "Name": "Number of Panels",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 3831.6814620959558,
         "Y": 682.78157476071237
       },
       {
+        "ShowGeometry": true,
+        "Name": "Polygon.ByPoints",
         "Id": "9b38031cd7fa4221852f875afe221400",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Polygon.ByPoints",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1273.9604303564706,
         "Y": 916.977941380454
       },
       {
+        "ShowGeometry": true,
+        "Name": "Polygon.ByPoints",
         "Id": "c24a708d3c6243d6a9289b066b2ef86d",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Polygon.ByPoints",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1273.9604303564706,
         "Y": 1198.9382010529969
       },
       {
+        "ShowGeometry": false,
+        "Name": "Surface.ByPatch",
         "Id": "eafafbe8e5f74905ab807e440be40cbf",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Surface.ByPatch",
-        "ShowGeometry": false,
         "Excluded": false,
         "X": 1577.3832445493977,
         "Y": 916.977941380454
       },
       {
+        "ShowGeometry": false,
+        "Name": "Surface.ByPatch",
         "Id": "a2524ca9fcfa4a51bf6774db64370027",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Surface.ByPatch",
-        "ShowGeometry": false,
         "Excluded": false,
         "X": 1577.3832445493977,
         "Y": 1198.9382010529969
       },
       {
+        "ShowGeometry": true,
+        "Name": "Color Palette",
         "Id": "f85358e356c64c7795029b4af5a0cf31",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Color Palette",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1577.3832445493977,
         "Y": 1024.977941380454
       },
       {
+        "ShowGeometry": true,
+        "Name": "GeometryColor.ByGeometryColor",
         "Id": "3de8138c91ff4c439d3b118f479e8d68",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "GeometryColor.ByGeometryColor",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1920.9882224396615,
         "Y": 957.977941380454
       },
       {
+        "ShowGeometry": true,
+        "Name": "GeometryColor.ByGeometryColor",
         "Id": "e752cfed99474bfdb3612845e5c5d0bb",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "GeometryColor.ByGeometryColor",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1920.9882224396615,
         "Y": 1239.9382010529969
       },
       {
+        "ShowGeometry": true,
+        "Name": "Color Palette",
         "Id": "e8cd203e9c0648fcae0b3b0185c86832",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Color Palette",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1577.3832445493977,
         "Y": 1306.9382010529969
       },
       {
+        "ShowGeometry": false,
+        "Name": "Data.Remember",
         "Id": "04c0a8f7cf254cb5bc5d1c994940da63",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Data.Remember",
-        "ShowGeometry": false,
         "Excluded": false,
         "X": 179.535026127425,
         "Y": 349.723588600716
       },
       {
+        "ShowGeometry": false,
+        "Name": "List.Flatten",
         "Id": "2e0cd783e41e4bb498519fa80792c2c0",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "List.Flatten",
-        "ShowGeometry": false,
         "Excluded": false,
         "X": -149.891584111646,
         "Y": 349.723588600716
       },
       {
+        "ShowGeometry": false,
+        "Name": "Surface",
         "Id": "31fd55ab0d984ffbbbd74cfd1480444e",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Surface",
-        "ShowGeometry": false,
         "Excluded": false,
-        "X": 521.134820534895,
+        "X": 539.53077526866173,
         "Y": 349.723588600716
       },
       {
+        "ShowGeometry": true,
+        "Name": "Math.Sum",
         "Id": "8c25a91408f24416ad34f3623ee3fe6a",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Math.Sum",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 1551.0678406240513,
         "Y": 432.664206686176
       },
       {
+        "ShowGeometry": true,
+        "Name": "Math.Round",
         "Id": "dd0f0a40f9a54c5597a0011268a005e3",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Math.Round",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 3457.1814620959558,
         "Y": 299.26981733496973
       },
       {
+        "ShowGeometry": true,
+        "Name": "Code Block",
         "Id": "a1f7f563e1a84d1fad0213a4229e82a1",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Code Block",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 3278.1814620959558,
         "Y": 433.48315066830304
       },
       {
+        "ShowGeometry": true,
+        "Name": "Convert Between Units",
         "Id": "eafca84ea2704fcfa9a68e164295c269",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Convert Between Units",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 2916.6090611058567,
         "Y": 299.26981733496973
       },
       {
+        "ShowGeometry": false,
+        "Name": "Select Face",
         "Id": "65edd27af0074483b8fd001c5ed61f52",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Select Face",
-        "ShowGeometry": false,
         "Excluded": false,
         "X": -456.47811233122,
         "Y": 349.723588600716
       },
       {
+        "ShowGeometry": true,
+        "Name": "/",
         "Id": "acc968f06b0c4f3694fb5f2e8eb2a9c3",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "/",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 2580.5286155613026,
         "Y": 543.26981733496973
       },
       {
+        "ShowGeometry": true,
+        "Name": "Math.Round",
         "Id": "713c65a3392f4198a3bfaf31d4549a7c",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Math.Round",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 3472.4376502147675,
         "Y": 543.26981733496973
       },
       {
+        "ShowGeometry": true,
+        "Name": "Convert Between Units",
         "Id": "7fcafbc47b4c4d56bb9e73b50600c54d",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
-        "Name": "Convert Between Units",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 2916.6090611058567,
         "Y": 543.26981733496973
       },
       {
+        "ShowGeometry": true,
+        "Name": "Full Panel Area",
         "Id": "b62b3921bbab427a85e8b871618d2689",
         "IsSetAsInput": false,
         "IsSetAsOutput": true,
-        "Name": "Full Panel Area",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": 3831.6814620959558,
         "Y": 543.26981733496973
       },
       {
+        "ShowGeometry": true,
+        "Name": "Number of U-Panels",
         "Id": "fb87854012da4d0b94b99cb89774fb64",
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
-        "Name": "Number of U-Panels",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": -456.47811233122,
-        "Y": 622.53334553566219
+        "Y": 630.64290808090982
       },
       {
+        "ShowGeometry": true,
+        "Name": "Number of V-Panels",
         "Id": "33b29928d46c4d7eb3bebe146bc588dc",
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
-        "Name": "Number of V-Panels",
-        "ShowGeometry": true,
         "Excluded": false,
         "X": -456.47811233122,
-        "Y": 740.83875036254722
+        "Y": 748.94831290779484
       }
     ],
     "Annotations": [
       {
         "Id": "5f38941e44494702842465df52b57e9c",
-        "Title": "Inputs",
+        "Title": "Inputs: Changeable variables",
         "Nodes": [
           "33b29928d46c4d7eb3bebe146bc588dc",
           "fb87854012da4d0b94b99cb89774fb64",
@@ -1649,13 +1649,13 @@
           "bbe0e83e088346bab9dcdf9526b80277"
         ],
         "Left": -466.47811233122,
-        "Top": 533.71103178392832,
-        "Width": 319.0,
-        "Height": 382.22388387929755,
+        "Top": 498.32059432917595,
+        "Width": 319.5,
+        "Height": 432.32962888208283,
         "FontSize": 36.0,
-        "InitialTop": 586.71103178392832,
-        "InitialHeight": 367.22388387929755,
-        "TextblockHeight": 43.0,
+        "InitialTop": 594.820594329176,
+        "InitialHeight": 373.82962888208283,
+        "TextblockHeight": 86.5,
         "Background": "#FFFFB8D8"
       },
       {
@@ -1680,13 +1680,13 @@
           "3953eccf60be449c9faf9eab7085f057"
         ],
         "Left": 2307.1567096207082,
-        "Top": 135.26981733496973,
-        "Width": 1822.5247524752476,
-        "Height": 656.51175742574264,
+        "Top": 134.76981733496973,
+        "Width": 1822.0247524752476,
+        "Height": 657.01175742574264,
         "FontSize": 36.0,
         "InitialTop": 231.26981733496973,
         "InitialHeight": 596.51175742574264,
-        "TextblockHeight": 86.0,
+        "TextblockHeight": 86.5,
         "Background": "#FFFFC999"
       },
       {
@@ -1702,13 +1702,13 @@
           "242096749f834a6293b2594c495e9804"
         ],
         "Left": -631.413126913716,
-        "Top": -147.80175266461751,
-        "Width": 1118.948153041141,
-        "Height": 275.604981127819,
+        "Top": -148.30175266461751,
+        "Width": 1119.948153041141,
+        "Height": 276.104981127819,
         "FontSize": 36.0,
-        "InitialTop": -51.8017526646175,
+        "InitialTop": -51.80175266461751,
         "InitialHeight": 256.604981127819,
-        "TextblockHeight": 86.0,
+        "TextblockHeight": 86.5,
         "Background": "#FFB9F9E1"
       },
       {
@@ -1727,13 +1727,13 @@
           "49d41074a639437fb5edfbefb595aff9"
         ],
         "Left": 948.52310161110438,
-        "Top": 38.003618014613011,
-        "Width": 1253.4651208285572,
-        "Height": 565.66058867156289,
+        "Top": 37.503618014613011,
+        "Width": 1252.4651208285572,
+        "Height": 566.16058867156289,
         "FontSize": 36.0,
         "InitialTop": 134.003618014613,
         "InitialHeight": 443.660588671563,
-        "TextblockHeight": 86.0,
+        "TextblockHeight": 86.5,
         "Background": "#FFB9F9E1"
       },
       {
@@ -1756,13 +1756,13 @@
           "a31f1d3373214cd39208f59bb183d6a4"
         ],
         "Left": 1263.9604303564706,
-        "Top": 708.66023550830721,
+        "Top": 709.16023550830721,
         "Width": 937.02779208319089,
-        "Height": 691.27796554468966,
+        "Height": 690.77796554468966,
         "FontSize": 36.0,
         "InitialTop": 848.66023550830721,
         "InitialHeight": 603.27796554468966,
-        "TextblockHeight": 130.0,
+        "TextblockHeight": 129.5,
         "Background": "#FFB9F9E1"
       },
       {
@@ -1777,13 +1777,13 @@
           "e5f6b7a3542c4524a5230fc3cefbfead"
         ],
         "Left": -466.47811233122,
-        "Top": 155.258411259269,
-        "Width": 953.013138458645,
-        "Height": 313.46517734144703,
+        "Top": 154.758411259269,
+        "Width": 952.013138458645,
+        "Height": 314.46517734144703,
         "FontSize": 36.0,
         "InitialTop": 251.258411259269,
         "InitialHeight": 243.46517734144703,
-        "TextblockHeight": 86.0,
+        "TextblockHeight": 86.5,
         "Background": "#FFB9F9E1"
       },
       {
@@ -1793,9 +1793,9 @@
           "31fd55ab0d984ffbbbd74cfd1480444e",
           "2b816393622e46abb9d7b775f2623999"
         ],
-        "Left": 511.13482053489497,
+        "Left": 529.53077526866173,
         "Top": 198.258411259269,
-        "Width": 319.0,
+        "Width": 318.5,
         "Height": 244.46517734144703,
         "FontSize": 36.0,
         "InitialTop": 251.258411259269,
@@ -1828,7 +1828,7 @@
         "Left": -1185.7176861541163,
         "Top": 153.82784032957409,
         "Width": 314.0,
-        "Height": 146.0,
+        "Height": 146.5,
         "FontSize": 14.0,
         "InitialTop": 183.82784032957409,
         "InitialHeight": 140.0,
@@ -1844,7 +1844,7 @@
         "Left": -1185.7176861541163,
         "Top": -2.5252440340514113,
         "Width": 314.0,
-        "Height": 146.0,
+        "Height": 146.5,
         "FontSize": 14.0,
         "InitialTop": 27.474755965948589,
         "InitialHeight": 140.0,
@@ -1866,7 +1866,7 @@
         "Left": -1822.1743440704513,
         "Top": -126.74002559463395,
         "Width": 634.59166944121125,
-        "Height": 546.0298967630979,
+        "Height": 570.0298967630979,
         "FontSize": 48.0,
         "InitialTop": -1.7400255946339485,
         "InitialHeight": 411.02989676309795,
@@ -1919,7 +1919,7 @@
         "Id": "2b816393622e46abb9d7b775f2623999",
         "Title": "A Code Block with a single variable that simply passes through the information that is fed into the auto-generated input port. This can be used to clean up wires or for graph clarity.",
         "Nodes": [],
-        "Left": 521.134820534895,
+        "Left": 539.53077526866173,
         "Top": 251.258411259269,
         "Width": 0.0,
         "Height": 0.0,
@@ -1934,7 +1934,7 @@
         "Title": "Number of Panels in the 'U' direction.",
         "Nodes": [],
         "Left": -456.47811233122,
-        "Top": 586.71103178392832,
+        "Top": 594.820594329176,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -1948,7 +1948,7 @@
         "Title": "Number of Panels in the 'V' direction.",
         "Nodes": [],
         "Left": -456.47811233122,
-        "Top": 705.01643661081334,
+        "Top": 713.12599915606063,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -2143,8 +2143,8 @@
         "Id": "5ed4214e9cee433fa2f7e93b47a721e4",
         "Title": "Counting the Full Panels.",
         "Nodes": [],
-        "Left": 2317.1567096207082,
-        "Top": 643.28157476071237,
+        "Left": 2321.2241620021205,
+        "Top": 603.96286840705784,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -2157,8 +2157,8 @@
         "Id": "bbe0e83e088346bab9dcdf9526b80277",
         "Title": "NOTE:\r\nIn order to see an 'Input' in Refinery, you have to right-click on a compatible node and check the 'Is Input' option. Rename the node to see a legible input name in Refinery.",
         "Nodes": [],
-        "Left": -456.47811233122,
-        "Top": 813.93491566322587,
+        "Left": -453.8358143301059,
+        "Top": 828.65022321125878,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -2172,7 +2172,7 @@
         "Title": "Generating a simple Rectangle by inputting a Width and Length number.",
         "Nodes": [],
         "Left": -456.47811233122,
-        "Top": -51.8017526646175,
+        "Top": -51.80175266461751,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -2186,7 +2186,7 @@
         "Title": "Creating a Surface from a closed loop of curves.",
         "Nodes": [],
         "Left": -137.11642735125702,
-        "Top": -37.3017526646175,
+        "Top": -37.30175266461751,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -2225,7 +2225,7 @@
       },
       {
         "Id": "71bb67f70ec04987aada7cf94b712015",
-        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nGreen indicates Variables that can be altered per project and must be set accordingly before running the script.",
+        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nRed indicates Variables that can be altered per project and must be set accordingly before running the script.",
         "Nodes": [],
         "Left": -1175.7176861541163,
         "Top": 27.474755965948589,
@@ -2239,7 +2239,7 @@
       },
       {
         "Id": "764e446baf5145fe886e8f54dacf25df",
-        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nRed indicates checking nodes to ensure the script has deployed correctly.",
+        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nOrange indicates checking nodes to ensure the script has deployed correctly.",
         "Nodes": [],
         "Left": -1175.7176861541163,
         "Top": 344.50952582408934,
@@ -2253,7 +2253,7 @@
       },
       {
         "Id": "92c95e93b75a49458d8dce9ef2110c55",
-        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nOrange indicates the working of the script. No changes should be made in these groups unless advised.",
+        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nGreen indicates the working of the script. No changes should be made in these groups unless advised.",
         "Nodes": [],
         "Left": -1175.7176861541163,
         "Top": 183.82784032957409,
@@ -2284,7 +2284,7 @@
         "Title": "ASSOCIATED FILE(S)      \r\n________________________________________________________\r\n\r\nRAC_Basic_sample_project.rvt",
         "Nodes": [],
         "Left": -1812.1743440704513,
-        "Top": 88.603273326398721,
+        "Top": 88.6032733263987,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -2295,7 +2295,7 @@
       },
       {
         "Id": "b6cdc995c51b48b5ba07299d6aadf601",
-        "Title": "AUTHOR(S) / CREATION DATE\r\n________________________________________________________\r\n\r\nRefinery Team and The Proving Ground / Dec 2018",
+        "Title": "AUTHOR(S) / CREATION DATE\r\n________________________________________________________\r\n\r\nRefinery Team / Dec 2018",
         "Nodes": [],
         "Left": -1812.1743440704513,
         "Top": 178.94657224743139,
@@ -2337,7 +2337,7 @@
       },
       {
         "Id": "5281385170434f23bef87e50a4723324",
-        "Title": "ADDITIONAL COMMENTS\r\n________________________________________________________\r\n\r\nThis graph has to be ran in Revit: Revit Nodes are only accessible in Dynamo for Revit and not through Dynamo Sandbox.",
+        "Title": "ADDITIONAL COMMENTS\r\n________________________________________________________\r\n\r\nThis graph has to be ran in Revit: Revit Nodes are only accessible in Dynamo for Revit and not through Dynamo Sandbox.\r\n\r\nIf you open the graph in Dynamo Sandbox, Data Remember node will use the data that was serialized from previous runs of the graph.",
         "Nodes": [],
         "Left": -1496.58267462924,
         "Top": 269.289871168464,
@@ -2354,7 +2354,7 @@
         "Title": "REQUIRED DYNAMO PACKAGES\r\n________________________________________________________\r\n\r\nLunchbox for Dynamo - v2018.7.6\r\n\r\nNote:\r\nThe Lunchbox installation instructions are now the txt file in the Extra folder. To install Lunchbox you have to use an external installer in liue of the Package Manager.",
         "Nodes": [],
         "Left": -1497.4800555865174,
-        "Top": 88.603273326398721,
+        "Top": 88.6032733263987,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -2392,8 +2392,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -248.326778126411,
-    "Y": 173.69394155571365,
-    "Zoom": 0.50282073766586022
+    "X": 2295.2195338743472,
+    "Y": 171.29659992002723,
+    "Zoom": 1.1148538061050353
   }
 }

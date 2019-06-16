@@ -721,12 +721,12 @@
     },
     "Camera": {
       "Name": "Background Preview",
-      "EyeX": 16.649165448682741,
-      "EyeY": 106.96302537737981,
-      "EyeZ": 29.784579756175717,
-      "LookX": 0.38417033514464904,
-      "LookY": -90.862861814563274,
-      "LookZ": -40.274815481445685,
+      "EyeX": 16.657820036579885,
+      "EyeY": 104.91606716062027,
+      "EyeZ": 28.877268861142873,
+      "LookX": 0.37551574724750481,
+      "LookY": -88.815903597803739,
+      "LookZ": -39.367504586412842,
       "UpX": 0.0076885851522553676,
       "UpY": 0.59181221608436818,
       "UpZ": -0.80603919665960755
@@ -896,20 +896,20 @@
     "Annotations": [
       {
         "Id": "f64f8e9bebbd46d99f07b09e1df7c39b",
-        "Title": "Input",
+        "Title": "Input: Changeable variables",
         "Nodes": [
           "e4f3a47f77e64dbab07221ba7c7ff31f",
           "4e94b355b2004071a721be9ed35e492c",
           "3e13cc613fed42b094bf3bd3e00287d1"
         ],
         "Left": 1206.562101729048,
-        "Top": 568.921365358392,
+        "Top": 525.421365358392,
         "Width": 319.5,
-        "Height": 314.98257124059114,
+        "Height": 358.48257124059114,
         "FontSize": 36.0,
         "InitialTop": 621.921365358392,
         "InitialHeight": 299.98257124059114,
-        "TextblockHeight": 43.0,
+        "TextblockHeight": 86.5,
         "Background": "#FFFFB8D8"
       },
       {
@@ -935,7 +935,7 @@
       },
       {
         "Id": "cbcc67b60c1a4db6a4d3685384d3763f",
-        "Title": "Output\r\nOutput information that can be used to filter results in Refinery",
+        "Title": "Output:\r\nOutput information that can be used to filter results in Refinery",
         "Nodes": [
           "e7012862977d455bb3a123b2b8750ec4",
           "22692579fbd648b69d8d40eccb70713e",
@@ -1101,7 +1101,7 @@
       },
       {
         "Id": "e4109aa018ef4dc2b6520f0af2c50117",
-        "Title": "DESCRIPTION   \r\n________________________________________________________\r\n\r\nThis graph will find the distance between two fixed points (Start and End) in 2-dimensional space in relation to a changable point in the X and Y dimensions. It will get the absolute values (No positive/negative association) and query their distance relationships. If the queried value is \"Zero\" then the input has found the Midpoint. Refinery is used to optomize this process and find the midpoint computationally. ",
+        "Title": "DESCRIPTION   \r\n________________________________________________________\r\n\r\nThis graph will find the distance between two fixed points (Start and End) in 2-dimensional space in relation to a changeable point in the X and Y dimensions. It will get the absolute values (No positive/negative association) and query their distance relationships. If the queried value is \"Zero\" then the input has found the Midpoint. Refinery is used to optimize this process and find the midpoint computationally. ",
         "Nodes": [],
         "Left": 104.0559749103611,
         "Top": 840.53563601076928,
@@ -1157,7 +1157,7 @@
       },
       {
         "Id": "6dd63ff5761d447eb2617dc8c6e6b86f",
-        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nGreen indicates Variables that can be altered per project and must be set accordingly before running the script.",
+        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nRed indicates Variables that can be altered per project and must be set accordingly before running the script.",
         "Nodes": [],
         "Left": 740.512632826696,
         "Top": 598.720520808253,
@@ -1171,7 +1171,7 @@
       },
       {
         "Id": "1a7a3fc22fae48668e3acbb339104637",
-        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nRed indicates checking nodes to ensure the script has deployed correctly.",
+        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nOrange indicates checking nodes to ensure the script has deployed correctly.",
         "Nodes": [],
         "Left": 740.51263282669629,
         "Top": 915.755290666394,
@@ -1185,7 +1185,7 @@
       },
       {
         "Id": "14330da57f58427da0ed5d4e1b91bc26",
-        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nOrange indicates the working of the script. No changes should be made in these groups unless advised.",
+        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nGreen indicates the working of the script. No changes should be made in these groups unless advised.",
         "Nodes": [],
         "Left": 740.51263282669629,
         "Top": 755.07360517187874,
@@ -1226,8 +1226,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -992.52598707027482,
-    "Y": -73.090022596080757,
-    "Zoom": 0.56244715520364852
+    "X": 157.84164397230145,
+    "Y": -496.850290062663,
+    "Zoom": 1.1852496909361883
   }
 }

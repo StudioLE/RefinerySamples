@@ -2,7 +2,7 @@
   "Uuid": "33790953-9d0e-4c4b-9e27-227e2b095e1c",
   "IsCustomNode": false,
   "Description": null,
-  "Name": "01-bnh",
+  "Name": "01-Bnh",
   "ElementResolver": {
     "ResolutionMap": {}
   },
@@ -302,7 +302,7 @@
     "Annotations": [
       {
         "Id": "fb55fe0c78b841c09597d767b6d342d4",
-        "Title": "BnH\r\nRefinery Graph Example",
+        "Title": "BNH\r\nRefinery Graph Example",
         "Nodes": [
           "fab55fc954ff42f09d71dbc8a13526f5",
           "b053ad088072416d9173fe830702d7b7",
@@ -315,7 +315,7 @@
         "Left": -1037.8557648225651,
         "Top": 17.117719519996285,
         "Width": 632.23562714206719,
-        "Height": 570.02989676309926,
+        "Height": 613.02989676309926,
         "FontSize": 48.0,
         "InitialTop": 142.11771951999629,
         "InitialHeight": 411.02989676309926,
@@ -372,39 +372,21 @@
       },
       {
         "Id": "0872f611bb534349927dbe9889f13d96",
-        "Title": "Input:\r\nChangable variables",
+        "Title": "Input:\r\nChangeable variables",
         "Nodes": [
           "9cc8c8c0b2a04166be734cbe7ff2e605",
           "e5c46e5d142648daa06e415133f5c111",
           "5becb877398a4e2cb95f6b5be9dac6f6"
         ],
         "Left": -28.556327234371395,
-        "Top": 74.832501080579,
+        "Top": 31.832501080578993,
         "Width": 319.5,
-        "Height": 344.18420964003292,
+        "Height": 387.18420964003292,
         "FontSize": 36.0,
         "InitialTop": 171.332501080579,
         "InitialHeight": 324.68420964003292,
-        "TextblockHeight": 86.5,
+        "TextblockHeight": 129.5,
         "Background": "#FFFFB8D8"
-      },
-      {
-        "Id": "2c49408db27d4ab4960703dba3a9b60d",
-        "Title": "Output\r\nOutput information that can be used to filter results in Refinery",
-        "Nodes": [
-          "50b34159b50643abb8ac0393e3a9c188",
-          "529e1d6374f04ed497db84392ee8f912",
-          "5bbf18a925204fea9f709963649f0be3"
-        ],
-        "Left": 860.18679819874694,
-        "Top": 66.698294358326251,
-        "Width": 417.17197619264812,
-        "Height": 399.47768905762393,
-        "FontSize": 36.0,
-        "InitialTop": 249.69829435832625,
-        "InitialHeight": 252.47768905762396,
-        "TextblockHeight": 173.0,
-        "Background": "#FFFFC999"
       },
       {
         "Id": "533cf5144e9b48ff90ded2f3351eea88",
@@ -423,8 +405,27 @@
         "Background": "#FFB9F9E1"
       },
       {
+        "Id": "2919c28b8d734568b95f25ed268c2dcc",
+        "Title": "Output\r\nOutput information that can be used to filter results in Refinery",
+        "Nodes": [
+          "50b34159b50643abb8ac0393e3a9c188",
+          "529e1d6374f04ed497db84392ee8f912",
+          "5bbf18a925204fea9f709963649f0be3",
+          "7b9ba430947c48fea1647618d3a86ef9"
+        ],
+        "Left": 860.18679819874694,
+        "Top": 66.698294358326251,
+        "Width": 417.33743542476861,
+        "Height": 399.47768905762393,
+        "FontSize": 36.0,
+        "InitialTop": 249.69829435832625,
+        "InitialHeight": 262.66673654647673,
+        "TextblockHeight": 173.0,
+        "Background": "#FFFFC999"
+      },
+      {
         "Id": "fab55fc954ff42f09d71dbc8a13526f5",
-        "Title": "DYNAMO PROJECT\r\n________________________________________________________\r\n\r\n01-bnh.dyn",
+        "Title": "DYNAMO PROJECT\r\n________________________________________________________\r\n\r\n01-BNH.dyn",
         "Nodes": [],
         "Left": -1027.8557648225651,
         "Top": 142.11771951999629,
@@ -452,7 +453,7 @@
       },
       {
         "Id": "f6502c15b7434904943991ee586aa5d0",
-        "Title": "AUTHOR(S) / CREATION DATE\r\n________________________________________________________\r\n\r\nRefinery Team and The Proving Ground / Dec 2018",
+        "Title": "AUTHOR(S) / CREATION DATE\r\n________________________________________________________\r\n\r\nRefinery Team / Dec 2018",
         "Nodes": [],
         "Left": -1027.8557648225651,
         "Top": 322.80431736206231,
@@ -466,7 +467,7 @@
       },
       {
         "Id": "ce2bfcacd7ab4172bcef7a1f78db8ef9",
-        "Title": "DESCRIPTION   \r\n________________________________________________________\r\n\r\nThe bnh graph refers to the Bihn and Korn function that seeks to optomise the results of multi-objective algorithm. In this case we want to either maximise or minimise our numeric outputs.\r\n\r\nThis graph is used to showcase how Refinery works with a Pareto curve output when executed. ",
+        "Title": "DESCRIPTION   \r\n________________________________________________________\r\n\r\nThe BNH graph refers to the Binh and Korn function that seeks to optimize the results of a multi-objective algorithm. This function is usually used for testing optimization engines (at this time we do not implment constraints for this function). In this case we want to minimize our numeric outputs. \r\n\r\nThis graph is used to showcase how Refinery works with a Pareto curve outputs when two conflicting objectives exist in the problem. ",
         "Nodes": [],
         "Left": -1027.8557648225651,
         "Top": 413.14761628309554,
@@ -522,7 +523,7 @@
       },
       {
         "Id": "a38b9302560f4cbfabfa123810003d34",
-        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nGreen indicates Variables that can be altered per project and must be set accordingly before running the script.",
+        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nRed indicates Variables that can be altered per project and must be set accordingly before running the script.",
         "Nodes": [],
         "Left": -391.39910690623,
         "Top": 171.332501080579,
@@ -536,7 +537,7 @@
       },
       {
         "Id": "319aef352f264c419ddcd22c6b8129ab",
-        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nRed indicates checking nodes to ensure the script has deployed correctly.",
+        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nOrange indicates checking nodes to ensure the script has deployed correctly.",
         "Nodes": [],
         "Left": -391.39910690622992,
         "Top": 488.36727093872025,
@@ -550,7 +551,7 @@
       },
       {
         "Id": "14b2fe298a69439bb2a9b264fc7dd339",
-        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nOrange indicates the working of the script. No changes should be made in these groups unless advised.",
+        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nGreen indicates the working of the script. No changes should be made in these groups unless advised.",
         "Nodes": [],
         "Left": -391.39910690622992,
         "Top": 327.68558544420478,
@@ -589,10 +590,24 @@
         "InitialHeight": 0.0,
         "TextblockHeight": 0.0,
         "Background": "#FFC1D676"
+      },
+      {
+        "Id": "7b9ba430947c48fea1647618d3a86ef9",
+        "Title": "NOTE: \r\nIn order to see the Pareto Front in the Scatter Plot, select Output-01 and Output-02 for X and Y Axis",
+        "Nodes": [],
+        "Left": 981.52423362351556,
+        "Top": 372.365030904803,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
       }
     ],
-    "X": 3121.0499389037764,
-    "Y": -626.1465832622315,
-    "Zoom": 2.2996341851403814
+    "X": 1280.72014518769,
+    "Y": 13.274039248953354,
+    "Zoom": 0.97711384577297211
   }
 }

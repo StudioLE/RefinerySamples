@@ -1342,7 +1342,7 @@
       },
       {
         "Id": "ecd50cef5ee34e4f808bf2ad5a06e998",
-        "Title": "Inputs",
+        "Title": "Inputs: Changeable variables",
         "Nodes": [
           "75675e4a616d40868c15ac62617b91aa",
           "14f3210b8b634cc2871d1967b0e04d07",
@@ -1351,13 +1351,13 @@
           "64b7249bd20c4a6aa1472d19069b5b48"
         ],
         "Left": 816.46219660069369,
-        "Top": 468.839216999423,
+        "Top": 425.339216999423,
         "Width": 311.00000000000034,
-        "Height": 468.538104871065,
+        "Height": 512.038104871065,
         "FontSize": 36.0,
         "InitialTop": 521.839216999423,
-        "InitialHeight": 451.02236077050736,
-        "TextblockHeight": 43.0,
+        "InitialHeight": 453.538104871065,
+        "TextblockHeight": 86.5,
         "Background": "#FFFFB8D8"
       },
       {
@@ -1530,7 +1530,7 @@
       },
       {
         "Id": "6164fb6260b14b62a1461364ee6a9724",
-        "Title": "DESCRIPTION   \r\n________________________________________________________\r\n\r\nThis graph will take a given surface and populate a point on this surfaced based on a U and V value. It will then report back the Z value (Height) of the point and can be used to find the highest peak through Refinery optomization.",
+        "Title": "DESCRIPTION   \r\n________________________________________________________\r\n\r\nThis graph will take a given surface and populate a point on this surface based on a U and V value. It will then report back the Z value (Height) of the point and can be used to find the highest peak through Refinery optimization.",
         "Nodes": [],
         "Left": -189.26925163803844,
         "Top": 763.65433220193916,
@@ -1586,7 +1586,7 @@
       },
       {
         "Id": "cc171f759d854103ad16dea2ff23894b",
-        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nGreen indicates Variables that can be altered per project and must be set accordingly before running the script.",
+        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nRed indicates Variables that can be altered per project and must be set accordingly before running the script.",
         "Nodes": [],
         "Left": 445.61247881452505,
         "Top": 521.839216999423,
@@ -1600,7 +1600,7 @@
       },
       {
         "Id": "c9da2251854c476eabdfcee1afac74a8",
-        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nRed indicates checking nodes to ensure the script has deployed correctly.",
+        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nOrange indicates checking nodes to ensure the script has deployed correctly.",
         "Nodes": [],
         "Left": 445.61247881452505,
         "Top": 838.87398685756386,
@@ -1614,7 +1614,7 @@
       },
       {
         "Id": "fc973a6148c9426092435c2bcace1411",
-        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nOrange indicates the working of the script. No changes should be made in these groups unless advised.",
+        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nGreen indicates the working of the script. No changes should be made in these groups unless advised.",
         "Nodes": [],
         "Left": 445.61247881452505,
         "Top": 678.19230136304861,
@@ -1711,8 +1711,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 926.10662673245633,
-    "Y": -85.0481013768831,
-    "Zoom": 0.63494987737717512
+    "X": 490.65823558221348,
+    "Y": -452.43794053374927,
+    "Zoom": 1.3123119521635012
   }
 }

@@ -844,19 +844,19 @@
       },
       {
         "Id": "f64f8e9bebbd46d99f07b09e1df7c39b",
-        "Title": "Input",
+        "Title": "Input: Changeable variables",
         "Nodes": [
           "e4f3a47f77e64dbab07221ba7c7ff31f",
           "f33fab7e68294561bf31caafda31a029"
         ],
         "Left": -447.86267483863531,
-        "Top": 288.50446734810419,
+        "Top": 245.00446734810419,
         "Width": 319.5,
-        "Height": 217.18269303259677,
+        "Height": 260.68269303259677,
         "FontSize": 36.0,
         "InitialTop": 341.50446734810419,
         "InitialHeight": 241.18269303259677,
-        "TextblockHeight": 43.0,
+        "TextblockHeight": 86.5,
         "Background": "#FFFFB8D8"
       },
       {
@@ -1052,7 +1052,7 @@
       },
       {
         "Id": "8c13b4e0013e4fcbac456df5038a6d1a",
-        "Title": "DESCRIPTION   \r\n________________________________________________________\r\n\r\nThis graph will find the distance between two fixed points (Start and End) in relation to a changable point in the X-dimension only. It will get the absolute values (No positive/negative association) and query their distance relationships. If the queried value is \"Zero\" then the input has found the Midpoint. Refinery is used to optomize this process and find the midpoint computationally. ",
+        "Title": "DESCRIPTION   \r\n________________________________________________________\r\n\r\nThis graph will find the distance between two fixed points (Start and End) in relation to a changeable point in the X-dimension only. It will get the absolute values (No positive/negative association) and query their distance relationships. If the queried value is \"Zero\" then the input has found the Midpoint. Refinery is used to optimize this process and find the midpoint computationally. ",
         "Nodes": [],
         "Left": -1474.0029416178554,
         "Top": 559.934368296492,
@@ -1066,7 +1066,7 @@
       },
       {
         "Id": "b5794abca67f4db6aa0b20d7bd569f58",
-        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nGreen indicates Variables that can be altered per project and must be set accordingly before running the script.",
+        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nRed indicates Variables that can be altered per project and must be set accordingly before running the script.",
         "Nodes": [],
         "Left": -837.54628370152022,
         "Top": 318.119253093976,
@@ -1080,7 +1080,7 @@
       },
       {
         "Id": "951694f650024766aae0577b0f28e264",
-        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nRed indicates checking nodes to ensure the script has deployed correctly.",
+        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nOrange indicates checking nodes to ensure the script has deployed correctly.",
         "Nodes": [],
         "Left": -837.54628370152022,
         "Top": 635.15402295211675,
@@ -1094,7 +1094,7 @@
       },
       {
         "Id": "951bf23e942d471b9c59406066053fc8",
-        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nOrange indicates the working of the script. No changes should be made in these groups unless advised.",
+        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nGreen indicates the working of the script. No changes should be made in these groups unless advised.",
         "Nodes": [],
         "Left": -837.54628370152022,
         "Top": 474.4723374576015,
@@ -1135,8 +1135,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 806.59461806278159,
-    "Y": 225.87132735207013,
-    "Zoom": 0.13601528782374669
+    "X": 2062.5731910463851,
+    "Y": -169.08677970644996,
+    "Zoom": 1.214651301724182
   }
 }

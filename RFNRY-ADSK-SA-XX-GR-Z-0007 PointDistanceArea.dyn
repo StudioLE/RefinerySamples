@@ -1757,7 +1757,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 61.737005454465049,
-        "Y": 694.83090169924878
+        "Y": 694.8309016992489
       },
       {
         "ShowGeometry": false,
@@ -2073,7 +2073,7 @@
     "Annotations": [
       {
         "Id": "0f1f568399f44fbd926697f8bb1a69c1",
-        "Title": "Inputs",
+        "Title": "Inputs: Changeable variables",
         "Nodes": [
           "33df5755a8be4d2f9197b2541a188645",
           "cfd7732a70e14f7baed63059e21fee27",
@@ -2084,13 +2084,13 @@
           "5c038ca920884ac383674c19db908efc"
         ],
         "Left": 51.737005454465049,
-        "Top": 141.10518112741084,
+        "Top": 97.605181127410845,
         "Width": 319.5,
-        "Height": 621.72572057183788,
+        "Height": 665.22572057183811,
         "FontSize": 36.0,
         "InitialTop": 194.10518112741084,
-        "InitialHeight": 645.72572057183788,
-        "TextblockHeight": 43.0,
+        "InitialHeight": 645.72572057183811,
+        "TextblockHeight": 86.5,
         "Background": "#FFFFB8D8"
       },
       {
@@ -2148,7 +2148,7 @@
         "FontSize": 14.0,
         "InitialTop": 497.14318789499112,
         "InitialHeight": 140.0,
-        "TextblockHeight": 0.0,
+        "TextblockHeight": 20.0,
         "Background": "#FFFFC999"
       },
       {
@@ -2164,7 +2164,7 @@
         "FontSize": 14.0,
         "InitialTop": 336.46150240047587,
         "InitialHeight": 140.0,
-        "TextblockHeight": 0.0,
+        "TextblockHeight": 20.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -2180,7 +2180,7 @@
         "FontSize": 14.0,
         "InitialTop": 180.10841803685025,
         "InitialHeight": 140.0,
-        "TextblockHeight": 0.0,
+        "TextblockHeight": 20.0,
         "Background": "#FFFFB8D8"
       },
       {
@@ -2371,7 +2371,7 @@
       },
       {
         "Id": "f352e518bd8f4779a451df6385233b21",
-        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nGreen indicates Variables that can be altered per project and must be set accordingly before running the script.",
+        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nRed indicates Variables that can be altered per project and must be set accordingly before running the script.",
         "Nodes": [],
         "Left": -369.940184997654,
         "Top": 180.10841803685025,
@@ -2385,7 +2385,7 @@
       },
       {
         "Id": "106699c7ee3248dba9eab3c66cf76aa0",
-        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nRed indicates checking nodes to ensure the script has deployed correctly.",
+        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nOrange indicates checking nodes to ensure the script has deployed correctly.",
         "Nodes": [],
         "Left": -369.940184997654,
         "Top": 497.14318789499112,
@@ -2399,7 +2399,7 @@
       },
       {
         "Id": "9281fc70687943869d5761af0ad45e58",
-        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nOrange indicates the working of the script. No changes should be made in these groups unless advised.",
+        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nGreen indicates the working of the script. No changes should be made in these groups unless advised.",
         "Nodes": [],
         "Left": -369.940184997654,
         "Top": 336.46150240047587,
@@ -2440,8 +2440,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -331.60094260883727,
-    "Y": 129.81556244762686,
-    "Zoom": 0.41971421151135574
+    "X": 1562.9845400562158,
+    "Y": -3.9805286327824803,
+    "Zoom": 1.3123119521635012
   }
 }

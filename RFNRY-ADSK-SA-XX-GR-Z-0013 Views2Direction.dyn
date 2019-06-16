@@ -2885,7 +2885,7 @@
         {
           "Id": "a9e13a34e86e40cbafd699647d4ffae5",
           "Name": "geometry",
-          "Description": "Geometry",
+          "Description": "The geometry to which you would like to apply color.\n\nGeometry",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -2894,7 +2894,7 @@
         {
           "Id": "dcf2a8f8f8504c0886618a4bf9af9487",
           "Name": "color",
-          "Description": "Color",
+          "Description": "The color.\n\nColor",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -2905,7 +2905,7 @@
         {
           "Id": "19ada6020c674823857650e5e8f0434a",
           "Name": "GeometryColor",
-          "Description": "GeometryColor",
+          "Description": "A Display object.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -2913,7 +2913,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "GeometryColor.ByGeometryColor (geometry: Geometry, color: Color): GeometryColor"
+      "Description": "Display geometry using a color.\n\nGeometryColor.ByGeometryColor (geometry: Geometry, color: Color): GeometryColor"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -2924,7 +2924,7 @@
         {
           "Id": "fca11af861114a40a647de80419c5f0d",
           "Name": "geometry",
-          "Description": "Geometry",
+          "Description": "The geometry to which you would like to apply color.\n\nGeometry",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -2933,7 +2933,7 @@
         {
           "Id": "57821751b9eb486789a9c9a02ae283d0",
           "Name": "color",
-          "Description": "Color",
+          "Description": "The color.\n\nColor",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -2944,7 +2944,7 @@
         {
           "Id": "df74c26cafd9419280b807d86f436da5",
           "Name": "GeometryColor",
-          "Description": "GeometryColor",
+          "Description": "A Display object.",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -2952,7 +2952,7 @@
         }
       ],
       "Replication": "Auto",
-      "Description": "GeometryColor.ByGeometryColor (geometry: Geometry, color: Color): GeometryColor"
+      "Description": "Display geometry using a color.\n\nGeometryColor.ByGeometryColor (geometry: Geometry, color: Color): GeometryColor"
     },
     {
       "ConcreteType": "CoreNodeModels.Input.ColorPalette, CoreNodeModels",
@@ -7453,7 +7453,7 @@
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.2.6826",
+      "Version": "2.0.2.6660",
       "RunType": "Automatic",
       "RunPeriod": "1000"
     },
@@ -9321,13 +9321,13 @@
           "28885fa2b0404155afa87a172fde4473"
         ],
         "Left": -1476.1258526165484,
-        "Top": 2527.5205492425989,
-        "Width": 319.2,
-        "Height": 1022.6086732533497,
+        "Top": 2527.920549242599,
+        "Width": 319.0,
+        "Height": 1022.4086732533497,
         "FontSize": 36.0,
         "InitialTop": 2623.920549242599,
         "InitialHeight": 1003.4086732533497,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFFFB8D8"
       },
       {
@@ -9343,13 +9343,13 @@
           "13186f6c95c9410eaf83085858f47a03"
         ],
         "Left": -2573.3134465727089,
-        "Top": 2455.0057676820093,
-        "Width": 632.43562714207042,
-        "Height": 661.62989676309974,
+        "Top": 2455.2057676820091,
+        "Width": 632.23562714207037,
+        "Height": 661.02989676309971,
         "FontSize": 48.0,
         "InitialTop": 2580.2057676820091,
         "InitialHeight": 411.02989676309971,
-        "TextblockHeight": 115.2,
+        "TextblockHeight": 115.0,
         "Background": "#FFFFFFFF"
       },
       {
@@ -9360,12 +9360,12 @@
         ],
         "Left": -1936.8567886563687,
         "Top": 2896.455319100739,
-        "Width": 313.6,
+        "Width": 314.0,
         "Height": 132.0,
         "FontSize": 14.0,
         "InitialTop": 2926.455319100739,
         "InitialHeight": 140.0,
-        "TextblockHeight": 0.0,
+        "TextblockHeight": 20.0,
         "Background": "#FFFFC999"
       },
       {
@@ -9376,12 +9376,12 @@
         ],
         "Left": -1936.8567886563687,
         "Top": 2735.7736336062189,
-        "Width": 313.6,
-        "Height": 146.4,
+        "Width": 314.0,
+        "Height": 146.0,
         "FontSize": 14.0,
         "InitialTop": 2765.7736336062189,
         "InitialHeight": 140.0,
-        "TextblockHeight": 0.0,
+        "TextblockHeight": 20.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9392,12 +9392,12 @@
         ],
         "Left": -1936.8567886563687,
         "Top": 2579.420549242599,
-        "Width": 313.6,
-        "Height": 146.4,
+        "Width": 314.0,
+        "Height": 146.0,
         "FontSize": 14.0,
         "InitialTop": 2609.420549242599,
         "InitialHeight": 140.0,
-        "TextblockHeight": 0.0,
+        "TextblockHeight": 20.0,
         "Background": "#FFFFB8D8"
       },
       {
@@ -9412,13 +9412,13 @@
           "020db5a2836d4ddb99311fd3e3b9c6b8"
         ],
         "Left": 7440.88903310914,
-        "Top": 3325.39884745335,
-        "Width": 514.64620926609007,
-        "Height": 790.90716634128023,
+        "Top": 3325.19884745335,
+        "Width": 515.04620926609,
+        "Height": 791.50716634128,
         "FontSize": 36.0,
         "InitialTop": 3508.19884745335,
         "InitialHeight": 660.50716634128,
-        "TextblockHeight": 172.8,
+        "TextblockHeight": 173.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9430,13 +9430,13 @@
           "147a113252204a759ead9271e46821e5"
         ],
         "Left": 8466.5511430079441,
-        "Top": 3454.2508093658826,
-        "Width": 332.04994433380051,
-        "Height": 378.62971850847981,
+        "Top": 3454.4508093658824,
+        "Width": 332.24994433379942,
+        "Height": 379.62971850848,
         "FontSize": 36.0,
         "InitialTop": 3507.4508093658824,
         "InitialHeight": 362.62971850848,
-        "TextblockHeight": 43.2,
+        "TextblockHeight": 43.0,
         "Background": "#FFFFC999"
       },
       {
@@ -9462,13 +9462,13 @@
           "b49d8a5104ab42a18bc081643758d7ea"
         ],
         "Left": 2017.5328134933241,
-        "Top": 4820.2919317072028,
-        "Width": 1199.3702328751701,
-        "Height": 810.8982410024679,
+        "Top": 4820.6919317072025,
+        "Width": 1198.5702328751702,
+        "Height": 810.89824100246824,
         "FontSize": 36.0,
         "InitialTop": 4916.6919317072025,
         "InitialHeight": 766.89824100246824,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9492,13 +9492,13 @@
           "39825c2359184ae5b4af85bf53e8fc65"
         ],
         "Left": 1925.422990988804,
-        "Top": 4003.2089222954924,
-        "Width": 1301.32753251514,
-        "Height": 652.59999999999957,
+        "Top": 4003.6089222954924,
+        "Width": 1300.5275325151401,
+        "Height": 653.0,
         "FontSize": 36.0,
         "InitialTop": 4099.6089222954924,
         "InitialHeight": 583.0,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9524,13 +9524,13 @@
           "6093f4727f6548499fd47913f8306ee4"
         ],
         "Left": 1598.7961371445772,
-        "Top": 2610.005096597291,
-        "Width": 1603.299999999989,
-        "Height": 619.21333333333007,
+        "Top": 2610.405096597291,
+        "Width": 1602.4999999999891,
+        "Height": 619.21333333333,
         "FontSize": 36.0,
         "InitialTop": 2706.405096597291,
         "InitialHeight": 575.21333333333,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9556,13 +9556,13 @@
           "50020e94f1de4e868932d3ed9dac4dfb"
         ],
         "Left": 1613.0966817086373,
-        "Top": 1269.173082418718,
-        "Width": 1603.2999999999986,
-        "Height": 619.21333333332962,
+        "Top": 1269.5730824187181,
+        "Width": 1602.4999999999986,
+        "Height": 619.2133333333295,
         "FontSize": 36.0,
         "InitialTop": 1365.5730824187181,
         "InitialHeight": 575.2133333333295,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9578,13 +9578,13 @@
           "61eb9f5f9e844e5cb642701306451dac"
         ],
         "Left": -480.54511099754677,
-        "Top": 1598.8733995913303,
-        "Width": 1216.3955403636398,
-        "Height": 440.04345033938972,
+        "Top": 1599.2733995913304,
+        "Width": 1215.9955403636397,
+        "Height": 441.24345033938948,
         "FontSize": 36.0,
         "InitialTop": 1695.2733995913304,
         "InitialHeight": 376.02067806215928,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9600,13 +9600,13 @@
           "07df4afe91c8439e85636d32ad0c4ddb"
         ],
         "Left": -481.77595900530764,
-        "Top": 2119.1331901671642,
-        "Width": 1219.3955403636328,
-        "Height": 411.04345033938563,
+        "Top": 2119.5331901671643,
+        "Width": 1218.9955403636327,
+        "Height": 412.24345033938562,
         "FontSize": 36.0,
         "InitialTop": 2215.5331901671643,
         "InitialHeight": 373.02067806215973,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9622,13 +9622,13 @@
           "a5f1b87f1928447f96f9f015b4ba8eb1"
         ],
         "Left": -481.32250672028226,
-        "Top": 2594.7280012542883,
-        "Width": 1225.2907354960983,
-        "Height": 524.05993625569158,
+        "Top": 2595.1280012542884,
+        "Width": 1224.8907354960984,
+        "Height": 523.85993625569154,
         "FontSize": 36.0,
         "InitialTop": 2691.1280012542884,
         "InitialHeight": 504.85993625569154,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9644,13 +9644,13 @@
           "238f1779c44a4fbdae3b02f1670842c3"
         ],
         "Left": -485.01073862651106,
-        "Top": 3180.4410837380024,
-        "Width": 1222.305896879551,
-        "Height": 459.53514747153378,
+        "Top": 3180.8410837380025,
+        "Width": 1221.9058968795512,
+        "Height": 459.33514747153367,
         "FontSize": 36.0,
         "InitialTop": 3276.8410837380025,
         "InitialHeight": 440.33514747153367,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9666,13 +9666,13 @@
           "451cb07e875e4bc189bd3509c399437a"
         ],
         "Left": -491.23107928882609,
-        "Top": 3733.7283243632069,
-        "Width": 1221.6443448374271,
-        "Height": 419.17896424244992,
+        "Top": 3734.128324363207,
+        "Width": 1221.244344837427,
+        "Height": 418.97896424244982,
         "FontSize": 36.0,
         "InitialTop": 3830.128324363207,
         "InitialHeight": 399.97896424244982,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9688,13 +9688,13 @@
           "44f3b70c43f64907a6af1b5b9285d0c2"
         ],
         "Left": -484.33960361040545,
-        "Top": 4251.610288688149,
-        "Width": 1220.8709498203575,
-        "Height": 472.6669730561178,
+        "Top": 4252.0102886881486,
+        "Width": 1220.4709498203574,
+        "Height": 472.46697305611815,
         "FontSize": 36.0,
         "InitialTop": 4348.0102886881486,
         "InitialHeight": 453.46697305611815,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9706,13 +9706,13 @@
           "84de2a576bfb459a83244d029d25db5c"
         ],
         "Left": 2474.7335361186529,
-        "Top": 3343.2468779896476,
-        "Width": 713.91978893918281,
-        "Height": 248.2000000000001,
+        "Top": 3343.6468779896477,
+        "Width": 712.71978893918276,
+        "Height": 248.0,
         "FontSize": 36.0,
         "InitialTop": 3439.6468779896477,
         "InitialHeight": 229.0,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9738,13 +9738,13 @@
           "84f10ac2274c488ea176bf82cac88da3"
         ],
         "Left": 1593.9112850987076,
-        "Top": 1917.1147364916008,
-        "Width": 1603.3,
-        "Height": 619.21333333332984,
+        "Top": 1917.5147364916008,
+        "Width": 1602.5,
+        "Height": 619.21333333332973,
         "FontSize": 36.0,
         "InitialTop": 2013.5147364916008,
         "InitialHeight": 575.21333333332973,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9756,13 +9756,13 @@
           "e4a5e53d398b4d249c9b1ddfe39e21d9"
         ],
         "Left": 2485.3396571702283,
-        "Top": 3670.476934771496,
-        "Width": 726.82606087275576,
-        "Height": 248.2000000000001,
+        "Top": 3670.8769347714961,
+        "Width": 725.62606087275572,
+        "Height": 248.0,
         "FontSize": 36.0,
         "InitialTop": 3766.8769347714961,
         "InitialHeight": 229.0,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9780,13 +9780,13 @@
           "8798abbbe16444ea973d8b7a374a63a9"
         ],
         "Left": 3569.7355840370728,
-        "Top": 2624.6826159881375,
-        "Width": 1634.2280260138928,
-        "Height": 537.78538074645314,
+        "Top": 2624.2826159881374,
+        "Width": 1634.6280260138928,
+        "Height": 538.58538074645321,
         "FontSize": 36.0,
         "InitialTop": 2764.2826159881374,
         "InitialHeight": 450.58538074645321,
-        "TextblockHeight": 129.6,
+        "TextblockHeight": 130.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9799,13 +9799,13 @@
           "35ea8aa2a44748f891567365b9976b71"
         ],
         "Left": 5317.5816296414378,
-        "Top": 2725.0175915438494,
-        "Width": 924.81409826549339,
-        "Height": 345.20248754731995,
+        "Top": 2725.4175915438495,
+        "Width": 924.61409826549334,
+        "Height": 345.20248754731983,
         "FontSize": 36.0,
         "InitialTop": 2821.4175915438495,
         "InitialHeight": 301.20248754731983,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9818,13 +9818,13 @@
           "7b3afe4e41864e4191de8af1d9119867"
         ],
         "Left": 6363.3146868722279,
-        "Top": 2971.3323919323288,
-        "Width": 932.61527320172013,
-        "Height": 405.66159330307994,
+        "Top": 2971.7323919323289,
+        "Width": 932.41527320172008,
+        "Height": 405.66159330307983,
         "FontSize": 36.0,
         "InitialTop": 3067.7323919323289,
         "InitialHeight": 361.66159330307983,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9836,13 +9836,13 @@
           "340b8db921ab44a1b176cbeda26bd38d"
         ],
         "Left": 7442.3771399006082,
-        "Top": 2894.4124439941229,
-        "Width": 398.82830052232003,
-        "Height": 390.71565638192,
+        "Top": 2894.2124439941231,
+        "Width": 399.02830052232,
+        "Height": 391.31565638191978,
         "FontSize": 36.0,
         "InitialTop": 3077.2124439941231,
         "InitialHeight": 260.31565638191978,
-        "TextblockHeight": 172.8,
+        "TextblockHeight": 173.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9860,13 +9860,13 @@
           "07f2f98daf5348e8b82235fb60d8e8b4"
         ],
         "Left": 3462.7991769611981,
-        "Top": 4037.6575628808109,
-        "Width": 1634.22802601389,
-        "Height": 537.785380746449,
+        "Top": 4037.2575628808108,
+        "Width": 1634.6280260138901,
+        "Height": 538.58538074644912,
         "FontSize": 36.0,
         "InitialTop": 4177.2575628808108,
-        "InitialHeight": 450.58538074644912,
-        "TextblockHeight": 129.6,
+        "InitialHeight": 450.58538074644957,
+        "TextblockHeight": 130.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9879,13 +9879,13 @@
           "be5d166dfb7346afb1513a132e138a83"
         ],
         "Left": 5776.6828780142378,
-        "Top": 4177.4456713242553,
-        "Width": 924.81409826549975,
-        "Height": 345.2024875473204,
+        "Top": 4177.8456713242549,
+        "Width": 924.61409826549971,
+        "Height": 345.20248754732074,
         "FontSize": 36.0,
         "InitialTop": 4273.8456713242549,
         "InitialHeight": 301.20248754732074,
-        "TextblockHeight": 86.4,
+        "TextblockHeight": 86.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -9895,13 +9895,13 @@
           "d9c500d426a6445aae9aeb8ff91d56fc"
         ],
         "Left": 7433.88705825483,
-        "Top": 4145.2522389124706,
-        "Width": 190.4,
-        "Height": 361.79999999999984,
+        "Top": 4145.45223891247,
+        "Width": 191.0,
+        "Height": 362.0,
         "FontSize": 36.0,
         "InitialTop": 4414.45223891247,
         "InitialHeight": 145.0,
-        "TextblockHeight": 259.2,
+        "TextblockHeight": 259.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -10101,8 +10101,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 346.43060633434618,
-    "Y": -869.41789139206969,
+    "X": -1484.7693936656538,
+    "Y": -919.81789139206967,
     "Zoom": 0.37118594904030344
   }
 }

@@ -20,8 +20,8 @@
       "Id": "9a60967b471e44b98044cfd16e328900",
       "Name": "Surface Dimensions",
       "Type": "number",
-      "Value": "33.606788730563",
-      "MaximumValue": 500.0,
+      "Value": "100",
+      "MaximumValue": 100.0,
       "MinimumValue": 20.0,
       "StepValue": 1.0,
       "NumberType": "Double",
@@ -33,7 +33,7 @@
       "Id": "4351ee9067064debb1a835c5edc4078d",
       "Name": "Material Cost",
       "Type": "float",
-      "InitialValue": "210593.259964226",
+      "InitialValue": "648000",
       "Description": "Adds x to y.\n\n+ (x: var[]..[], y: var[]..[]): var[]..[]"
     }
   ],
@@ -81,10 +81,10 @@
       "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
       "NodeType": "NumberInputNode",
       "NumberType": "Double",
-      "MaximumValue": 500.0,
+      "MaximumValue": 100.0,
       "MinimumValue": 20.0,
       "StepValue": 1.0,
-      "InputValue": 33.606788730563025,
+      "InputValue": 100.0,
       "Id": "9a60967b471e44b98044cfd16e328900",
       "Inputs": [],
       "Outputs": [
@@ -966,8 +966,8 @@
         "IsSetAsInput": true,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1546.2110793664285,
-        "Y": 1131.8757668573974
+        "X": 1580.1705962856861,
+        "Y": 1158.5582444368142
       },
       {
         "ShowGeometry": true,
@@ -976,8 +976,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1546.21107936643,
-        "Y": 1511.21330844319
+        "X": 1575.3192367257939,
+        "Y": 1443.2942746046749
       },
       {
         "ShowGeometry": true,
@@ -986,8 +986,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1546.21107936643,
-        "Y": 1600.39235331058
+        "X": 1575.3192367257939,
+        "Y": 1532.4733194720648
       },
       {
         "ShowGeometry": false,
@@ -1076,8 +1076,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1546.21107936643,
-        "Y": 1689.57139817798
+        "X": 1575.3192367257939,
+        "Y": 1621.6523643394648
       },
       {
         "ShowGeometry": false,
@@ -1173,19 +1173,19 @@
     "Annotations": [
       {
         "Id": "71b825f5ea304cf2a5ad0f42b1d81b4a",
-        "Title": "Input:\r\nChangable variables",
+        "Title": "Input:\r\nChangeable variables",
         "Nodes": [
           "9a60967b471e44b98044cfd16e328900",
           "4a41fed36faa495cbb3abd978d45c4f5"
         ],
-        "Left": 1536.2110793664285,
-        "Top": 936.64946718289184,
+        "Left": 1570.1705962856861,
+        "Top": 920.33194476230665,
         "Width": 319.5,
-        "Height": 263.22629967450553,
+        "Height": 306.22629967450757,
         "FontSize": 36.0,
-        "InitialTop": 1033.1494671828918,
-        "InitialHeight": 243.72629967450553,
-        "TextblockHeight": 86.5,
+        "InitialTop": 1059.8319447623066,
+        "InitialHeight": 243.72629967450757,
+        "TextblockHeight": 129.5,
         "Background": "#FFFFB8D8"
       },
       {
@@ -1221,12 +1221,12 @@
           "07e7de158b404018a916356468a0e207",
           "09c187705c3e495ebabcfc3ca2f062e7"
         ],
-        "Left": 1536.21107936643,
-        "Top": 1328.21330844319,
+        "Left": 1565.3192367257939,
+        "Top": 1260.2942746046749,
         "Width": 178.0,
         "Height": 429.35808973478993,
         "FontSize": 36.0,
-        "InitialTop": 1511.21330844319,
+        "InitialTop": 1443.2942746046749,
         "InitialHeight": 323.35808973478993,
         "TextblockHeight": 173.0,
         "Background": "#FFB9F9E1"
@@ -1286,7 +1286,7 @@
         "FontSize": 14.0,
         "InitialTop": 1446.4105367155385,
         "InitialHeight": 140.0,
-        "TextblockHeight": 0.0,
+        "TextblockHeight": 20.0,
         "Background": "#FFFFC999"
       },
       {
@@ -1302,7 +1302,7 @@
         "FontSize": 14.0,
         "InitialTop": 1285.728851221023,
         "InitialHeight": 140.0,
-        "TextblockHeight": 0.0,
+        "TextblockHeight": 20.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -1318,12 +1318,12 @@
         "FontSize": 14.0,
         "InitialTop": 1129.3757668573974,
         "InitialHeight": 140.0,
-        "TextblockHeight": 0.0,
+        "TextblockHeight": 20.0,
         "Background": "#FFFFB8D8"
       },
       {
         "Id": "ac7627bb41164deb8c331823fa4fd55b",
-        "Title": "Output\r\nOutput information that can be used to filter results in Refinery",
+        "Title": "Output:\r\nOutput information that can be used to filter results in Refinery",
         "Nodes": [
           "4351ee9067064debb1a835c5edc4078d",
           "ae55970de558458a96409f56df769d14"
@@ -1457,7 +1457,7 @@
       },
       {
         "Id": "805da01a87cd4da4b1fc32496afd7e41",
-        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nGreen indicates Variables that can be altered per project and must be set accordingly before running the script.",
+        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nRed indicates Variables that can be altered per project and must be set accordingly before running the script.",
         "Nodes": [],
         "Left": 1089.8121375353376,
         "Top": 1129.3757668573974,
@@ -1471,7 +1471,7 @@
       },
       {
         "Id": "8a1b071915da48128cddfefb6b25ff0e",
-        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nRed indicates checking nodes to ensure the script has deployed correctly.",
+        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nOrange indicates checking nodes to ensure the script has deployed correctly.",
         "Nodes": [],
         "Left": 1089.812137535338,
         "Top": 1446.4105367155385,
@@ -1485,7 +1485,7 @@
       },
       {
         "Id": "fbfbdc7d2dac4bbabc4c12d70b315f77",
-        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nOrange indicates the working of the script. No changes should be made in these groups unless advised.",
+        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nGreen indicates the working of the script. No changes should be made in these groups unless advised.",
         "Nodes": [],
         "Left": 1089.812137535338,
         "Top": 1285.728851221023,
@@ -1501,8 +1501,8 @@
         "Id": "4a41fed36faa495cbb3abd978d45c4f5",
         "Title": "NOTE:\r\nIn order to see an 'Input' in Refinery, you have to right-click on a compatible node and check the 'Is Input' option. Rename the node to see a legible input name in Refinery.",
         "Nodes": [],
-        "Left": 1546.2110793664285,
-        "Top": 1033.1494671828918,
+        "Left": 1580.1705962856877,
+        "Top": 1059.8319447623066,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -1554,8 +1554,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -196.64212828079667,
-    "Y": -364.37074976493477,
-    "Zoom": 0.47065594505903663
+    "X": -202.77413985157648,
+    "Y": -969.30120499812028,
+    "Zoom": 1.024755112299697
   }
 }

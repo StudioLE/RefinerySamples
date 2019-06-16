@@ -2092,12 +2092,12 @@
     },
     "Camera": {
       "Name": "Background Preview",
-      "EyeX": -1673.7536044967387,
-      "EyeY": 565.35517213628282,
-      "EyeZ": -1377.0766239484449,
-      "LookX": 739.3994339714468,
-      "LookY": -680.566219372048,
-      "LookZ": 1847.6361750226845,
+      "EyeX": -851.673823396437,
+      "EyeY": 505.07895324069688,
+      "EyeZ": -1487.8997999022997,
+      "LookX": 665.16827986949124,
+      "LookY": -612.24155805138173,
+      "LookZ": 1662.1448704164757,
       "UpX": 0.042059533714719669,
       "UpY": 0.99357185567666428,
       "UpZ": 0.10509977750254267
@@ -2637,19 +2637,19 @@
     "Annotations": [
       {
         "Id": "e1107773a6454a059e8a4f62207d8945",
-        "Title": "Input",
+        "Title": "Input: Changeable variables",
         "Nodes": [
           "b06de57bff4c4eb8922affc6e0707c7d",
           "ec2f1d92862d4170b3c5817f9f1dd7c3"
         ],
         "Left": -567.39667608887282,
-        "Top": 213.52556193410885,
-        "Width": 319.2,
-        "Height": 219.74092312300394,
+        "Top": 170.22556193410884,
+        "Width": 319.5,
+        "Height": 263.24092312300394,
         "FontSize": 36.0,
         "InitialTop": 266.72556193410884,
         "InitialHeight": 243.74092312300394,
-        "TextblockHeight": 43.2,
+        "TextblockHeight": 86.5,
         "Background": "#FFFFB8D8"
       },
       {
@@ -2669,13 +2669,13 @@
           "1cc4c9ca25e54485b73053f72fad017a"
         ],
         "Left": -125.42294130196626,
-        "Top": 464.47201340247005,
-        "Width": 1569.9489797299361,
+        "Top": 464.67201340247004,
+        "Width": 1570.548979729936,
         "Height": 405.07724922659168,
         "FontSize": 36.0,
         "InitialTop": 517.67201340247,
         "InitialHeight": 429.07724922659168,
-        "TextblockHeight": 43.2,
+        "TextblockHeight": 43.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -2718,13 +2718,13 @@
           "8d08da2eaccf47518a2f93c753a9cf91"
         ],
         "Left": 1606.4227859764246,
-        "Top": 321.09440662454443,
-        "Width": 2956.4654062173954,
-        "Height": 863.966032823485,
+        "Top": 321.29440662454442,
+        "Width": 2955.6654062173952,
+        "Height": 863.96603282348508,
         "FontSize": 36.0,
         "InitialTop": 374.29440662454442,
         "InitialHeight": 887.96603282348508,
-        "TextblockHeight": 43.2,
+        "TextblockHeight": 43.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -2735,7 +2735,7 @@
         ],
         "Left": -975.33722322448023,
         "Top": 545.51496981595938,
-        "Width": 313.6,
+        "Width": 314.0,
         "Height": 132.0,
         "FontSize": 14.0,
         "InitialTop": 575.51496981595938,
@@ -2756,13 +2756,13 @@
           "d1491acbf82142dcbbaa5d2949605822"
         ],
         "Left": -1611.7938811408153,
-        "Top": 104.06541839723563,
-        "Width": 632.43562714206723,
-        "Height": 728.62989676309894,
+        "Top": 104.26541839723563,
+        "Width": 632.23562714206719,
+        "Height": 728.529896763099,
         "FontSize": 48.0,
         "InitialTop": 229.26541839723563,
         "InitialHeight": 411.02989676309903,
-        "TextblockHeight": 115.2,
+        "TextblockHeight": 115.0,
         "Background": "#FFFFFFFF"
       },
       {
@@ -2773,8 +2773,8 @@
         ],
         "Left": -975.33722322448023,
         "Top": 384.83328432144413,
-        "Width": 313.6,
-        "Height": 146.4,
+        "Width": 314.0,
+        "Height": 146.5,
         "FontSize": 14.0,
         "InitialTop": 414.83328432144413,
         "InitialHeight": 140.0,
@@ -2789,8 +2789,8 @@
         ],
         "Left": -975.33722322448023,
         "Top": 228.48019995781874,
-        "Width": 313.6,
-        "Height": 146.4,
+        "Width": 314.0,
+        "Height": 146.5,
         "FontSize": 14.0,
         "InitialTop": 258.48019995781874,
         "InitialHeight": 140.0,
@@ -2807,13 +2807,13 @@
           "063ba0b5185b4738bd8e9ee44ec7515b"
         ],
         "Left": 945.00440505668007,
-        "Top": 941.93682995543827,
-        "Width": 439.52163337128991,
-        "Height": 541.54497018505754,
+        "Top": 941.73682995543822,
+        "Width": 439.62163337128982,
+        "Height": 542.94497018505763,
         "FontSize": 36.0,
         "InitialTop": 1124.7368299554382,
         "InitialHeight": 395.94497018505763,
-        "TextblockHeight": 172.8,
+        "TextblockHeight": 173.0,
         "Background": "#FFFFC999"
       },
       {
@@ -2826,13 +2826,13 @@
           "edd650be4de64cd1802fced1ef77478e"
         ],
         "Left": 4714.3672917529657,
-        "Top": -48.630700695217286,
-        "Width": 465.50430955682862,
-        "Height": 619.57182950846993,
+        "Top": -48.830700695217274,
+        "Width": 465.90430955682859,
+        "Height": 620.17182950847,
         "FontSize": 36.0,
         "InitialTop": 134.16929930478273,
         "InitialHeight": 489.17182950846995,
-        "TextblockHeight": 172.8,
+        "TextblockHeight": 173.0,
         "Background": "#FFB9F9E1"
       },
       {
@@ -2865,7 +2865,7 @@
       },
       {
         "Id": "8141804bf8a64c51af4571f3824d6f19",
-        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nRed indicates checking nodes to ensure the script has deployed correctly.",
+        "Title": "Checking / Outputs\r\n_______________________________________________________\r\n\r\nOrange indicates checking nodes to ensure the script has deployed correctly.",
         "Nodes": [],
         "Left": -965.33722322448023,
         "Top": 575.51496981595938,
@@ -2977,7 +2977,7 @@
       },
       {
         "Id": "ec807b61486a45c080c38a8ffbad0468",
-        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nOrange indicates the working of the script. No changes should be made in these groups unless advised.",
+        "Title": "Working / Functions\r\n_______________________________________________________\r\n\r\nGreen indicates the working of the script. No changes should be made in these groups unless advised.",
         "Nodes": [],
         "Left": -965.33722322448023,
         "Top": 414.83328432144413,
@@ -2991,7 +2991,7 @@
       },
       {
         "Id": "ae33161ae3df4bb08f3894f6db4b5b85",
-        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nGreen indicates Variables that can be altered per project and must be set accordingly before running the script.",
+        "Title": "Variables / Inputs\r\n_______________________________________________________\r\n\r\nRed indicates Variables that can be altered per project and must be set accordingly before running the script.",
         "Nodes": [],
         "Left": -965.33722322448023,
         "Top": 258.48019995781874,
@@ -3004,8 +3004,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 177.58583490923263,
-    "Y": 208.08342817216817,
-    "Zoom": 0.10409853920290905
+    "X": 1906.7210112609625,
+    "Y": -71.6134648570361,
+    "Zoom": 0.97456535847680592
   }
 }
